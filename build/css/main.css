@@ -1044,8 +1044,10 @@ select:-webkit-autofill:focus {
   box-sizing: border-box;
   box-shadow: 0px -1px 9px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(9px);
-  border-radius: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   z-index: 10;
+  overflow-y: scroll;
 }
 
 .modal-transition {
@@ -1117,11 +1119,16 @@ select:-webkit-autofill:focus {
   padding: 24px;
 }
 
-.modal-header:before {
+.modal-header--border {
+  position: relative;
+}
+
+.modal-header--border:before {
+  content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 24px;
+  width: calc(100% - 48px);
   height: 2px;
   background: #ECECEC;
   border-radius: 16px;
@@ -1270,7 +1277,6 @@ select:-webkit-autofill:focus {
   box-sizing: border-box;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.02);
   border-radius: 16px;
-  margin-bottom: 24px;
 }
 
 .modal-tickets-slider__title {
@@ -1287,6 +1293,28 @@ select:-webkit-autofill:focus {
 .modal-tickets-slider__prev {
   position: absolute;
   left: 14px;
+}
+
+.modal-ticket {
+  margin-bottom: 16px;
+}
+
+.modal-ticket-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+}
+
+.modal-ticket-list__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #E254F7 0%, #8444FE 100%);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .modal-ticket__title {
@@ -1329,4 +1357,155 @@ select:-webkit-autofill:focus {
   color: #ffffff;
   font-weight: bold;
   background: linear-gradient(135deg, #E254F7 0%, #8444FE 100%);
+}
+
+.modal-ticket-list__item--one:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.modal-ticket-list__item--two:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+}
+
+.modal-ticket-list__item--two:after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+}
+
+.modal-ticket-list__item--four:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+}
+
+.modal-ticket-list__item--four:after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+  opacity: .4;
+}
+
+.modal-ticket-list__circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.modal-ticket-list__circle:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+}
+
+.modal-ticket-list__circle:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+  opacity: .4;
+}
+
+.modal-ticket-list__item--four-revert:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+  opacity: .4;
+}
+
+.modal-ticket-list__item--four-revert:after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+}
+
+.modal-ticket-list__circle-revert {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.modal-ticket-list__circle-revert:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
+  opacity: .4;
+}
+
+.modal-ticket-list__circle-revert:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F2DBFD;
+  z-index: 2;
 }
