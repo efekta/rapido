@@ -1,0 +1,31 @@
+.btn-ticket {
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+
+.btn-ticket--dark {
+  min-width: 177px;
+  background: #03090F;
+  color: $white;
+  &:hover, &:active, &:focus {
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  }
+}
+.btn-ticket--white {
+  min-width: 139px;
+  background: #FFFFFF;
+  color: $dark;
+  &:hover, &:active, &:focus {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.02);
+  }
+}

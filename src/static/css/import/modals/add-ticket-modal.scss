@@ -1,0 +1,106 @@
+.extended-bid-form {
+  padding: 24px;
+}
+.extended-bid__desc {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.extended-calc {
+  width: 120px;
+  margin: 0 auto 17px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.extended-calc__number {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+.extended-calc__icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #E254F7 0%, #8444FE 100%);
+  border-radius: 50%;
+  color: #FBF9FD;
+  cursor: pointer;
+}
+.extended-bid-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: #F3EDF7;
+  border-radius: 12px;
+  margin-bottom: 34px;
+  &--inner {
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    &:before {
+      display: none;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 24px;
+    height: 28px;
+    background: url("../img/svg/extended-bid.svg") no-repeat;
+    background-size: 100% 100%;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    background: #F3EDF7;
+    border-radius: 2px;
+  }
+}
+.extended-bid-content__text {
+  width: 200px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #4D555D;
+}
+.extended-bid-content__count {
+  width: 62px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 16px;
+}
+.extended-bid-content__count--active {
+  background: linear-gradient(135deg, #E254F7 0%, #8444FE 100%);
+  font-weight: bold;
+  color: $white;
+}
+
+.extended-bid-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  background: #03090F;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  cursor: pointer;
+  color: $white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}

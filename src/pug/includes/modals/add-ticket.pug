@@ -1,0 +1,27 @@
+.modal.is-visible
+    .modal-overlay.modal-toggle
+    .modal-wrapper.modal-transition
+        .modal-header
+            button.modal-close.modal-toggle
+                img.modal-close__icon(src="img/svg/Close.svg")
+            h2.modal-header__title Добавить билеты
+        .modal-body
+            form.extended-bid-form
+                .extended-bid
+                    span.extended-bid__desc Расширенная ставка
+                    .extended-calc
+                        span.extended-calc__icon +
+                        span.extended-calc__number 2
+                        span.extended-calc__icon -
+                .extended-bid-content
+                    .extended-bid-content__text Выберете от 1 до 4х бонусных чисел во второй части экрана
+                .extended-bid
+                    span.extended-bid__desc Количество билетов
+                    .extended-bid-content.extended-bid-content--inner
+                        span.extended-bid-content__count +1
+                        span.extended-bid-content__count.extended-bid-content__count--active +3
+                        span.extended-bid-content__count +5
+                        span.extended-bid-content__count +10
+                        span.extended-bid-content__count +25
+        .modal-footer
+            button.extended-bid-btn Добавить <span>6</span> билетов – <span>1 500</span>₽
