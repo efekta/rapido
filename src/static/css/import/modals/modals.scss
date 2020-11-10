@@ -11,9 +11,9 @@
 }
 
 .modal.js-visible {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
 }
 
 .modal-overlay {
@@ -30,8 +30,8 @@
 }
 
 .modal.js-visible .modal-overlay {
-  opacity: 1;
-  display: block;
+  //opacity: 1;
+  //display: block;
   transition-delay: 0s;
 }
 .modal-wrapper {

@@ -657,6 +657,7 @@ select:-webkit-autofill:focus {
 
 .header-wrapper {
   min-height: 60px;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -692,23 +693,67 @@ select:-webkit-autofill:focus {
 }
 
 .games-slider__item {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   margin-left: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.games-slider__item--pink {
+  border: 2px solid #F3ABCE;
+}
+
+.games-slider__item--inner {
+  border: 2px solid #83829E;
+  background-color: transparent;
+}
+
+.games-slider__item--disabled {
+  position: relative;
+  background: transparent;
+  opacity: .4;
+  border: 1px solid white;
+}
+
+.games-slider__item--disabled:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 19px;
+  height: 19px;
+  background: url("../img/svg/disabled.svg") no-repeat;
+  transform: translate(-50%, -50%);
 }
 
 .games-slider__item img {
-  width: 32px;
-  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.games-slider__item.active {
+.games-slider__item--active {
   position: relative;
 }
 
-.games-slider__item.active:before {
+.games-slider__item--active:before {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: -23px;
+  width: 15px;
+  height: 15px;
+  background: #CFCFE9;
+  border-radius: 3px;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .banner-slides {
@@ -1000,12 +1045,6 @@ select:-webkit-autofill:focus {
   height: 100%;
 }
 
-.modal.js-visible {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .modal-overlay {
   position: fixed;
   z-index: 10;
@@ -1020,8 +1059,6 @@ select:-webkit-autofill:focus {
 }
 
 .modal.js-visible .modal-overlay {
-  opacity: 1;
-  display: block;
   transition-delay: 0s;
 }
 
