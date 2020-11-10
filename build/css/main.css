@@ -1600,6 +1600,7 @@ select:-webkit-autofill:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .modal-summary__head {
