@@ -758,9 +758,6 @@ select:-webkit-autofill:focus {
 
 .banner-slides {
   position: relative;
-  display: flex;
-  width: 4000px;
-  overflow: hidden;
   margin-bottom: 58px;
 }
 
