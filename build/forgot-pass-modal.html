@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="g-app" style="background-image: url('img/Background.png')">
-      <svg style="display: none"></svg>
+      <!--include ../includes/svg-sprite.pug-->
       <header class="header">
         <div class="g-container">
           <div class="header-wrapper"><a class="header-wrapper__user" href=""><img src="img/svg/union.svg"></a>
@@ -202,25 +202,6 @@
         </div>
       </section>
     </div>
-    <div class="modal js-visible">
-      <div class="modal-overlay"></div>
-      <div class="modal-wrapper modal-wrapper--big-height modal-wrapper--transition modal-wrapper--gray">
-        <div class="modal-auth-wrapp">
-          <div class="modal-header modal-header--auth"><img class="modal-header__logo" src="img/svg/logo-horizontal.svg" alt="logo">
-            <button class="modal-close modal-close--inner"><img class="modal-close__icon" src="img/svg/Close.svg" alt="close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="form-auth">
-              <h2 class="form-auth__title">Войти в аккаунт</h2>
-              <div class="form-auth__item">
-                <input class="form-auth__input" type="text" placeholder="E-mail, телефон или логин">
-              </div>
-              <button class="form-auth__btn form-auth__btn--no-top" type="submit">Отправить код</button>
-            </div>
-          </div>
-          <div class="modal-footer"><a class="auth-link" href=""><img class="auth-link__icon" src="img/svg/auth-prev-icon.svg" alt="prev"><span>Забыли пароль?</span></a></div>
-        </div>
-      </div>
-    </div>
+    <!--include ../includes/modals/forgot-pass-modal-->
   </body>
 </html>

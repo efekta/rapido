@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="g-app" style="background-image: url('img/Background.png')">
-      <svg style="display: none"></svg>
+      <!--include ../includes/svg-sprite.pug-->
       <header class="header">
         <div class="g-container">
           <div class="header-wrapper"><a class="header-wrapper__user" href=""><img src="img/svg/union.svg"></a>
@@ -202,80 +202,6 @@
         </div>
       </section>
     </div>
-    <div class="modal js-visible">
-      <div class="modal-overlay"></div>
-      <div class="modal-wrapper modal-wrapper--transition">
-        <div class="modal-header">
-          <button class="modal-delete"><img class="modal-delete__icon" src="img/svg/card-modal.svg"></button>
-          <div class="modal-tickets-slider">
-            <div class="modal-tickets-slider__item">
-              <p class="modal-tickets-slider__title">Билет №3</p>
-            </div>
-            <div class="modal-tickets-slider__next"><img src="img/svg/next.svg"></div>
-            <div class="modal-tickets-slider__prev"><img src="img/svg/prev.svg"></div>
-          </div>
-          <button class="modal-close"><img class="modal-close__icon" src="img/svg/Close.svg"></button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-ticket">
-            <h4 class="modal-ticket__title">Выберите 8 значений</h4>
-            <p class="modal-ticket__desc">Каждое число кратно увеличивает шансы на победу</p>
-            <table class="modal-ticket-table">
-              <tr class="modal-ticket-table__row">
-                <td class="modal-ticket-table__td">1</td>
-                <td class="modal-ticket-table__td modal-ticket-table__td--active">2</td>
-                <td class="modal-ticket-table__td">3</td>
-                <td class="modal-ticket-table__td">4</td>
-                <td class="modal-ticket-table__td">5</td>
-              </tr>
-              <tr class="modal-ticket-table__row">
-                <td class="modal-ticket-table__td">6</td>
-                <td class="modal-ticket-table__td">7</td>
-                <td class="modal-ticket-table__td">8</td>
-                <td class="modal-ticket-table__td">9</td>
-                <td class="modal-ticket-table__td">10</td>
-              </tr>
-              <tr class="modal-ticket-table__row">
-                <td class="modal-ticket-table__td">11</td>
-                <td class="modal-ticket-table__td">12</td>
-                <td class="modal-ticket-table__td">13</td>
-                <td class="modal-ticket-table__td">14</td>
-                <td class="modal-ticket-table__td">15</td>
-              </tr>
-              <tr class="modal-ticket-table__row">
-                <td class="modal-ticket-table__td">16</td>
-                <td class="modal-ticket-table__td">17</td>
-                <td class="modal-ticket-table__td">18</td>
-                <td class="modal-ticket-table__td">19</td>
-                <td class="modal-ticket-table__td">20</td>
-              </tr>
-            </table>
-          </div>
-          <div class="modal-ticket">
-            <h4 class="modal-ticket__title">Выберите бонусные числа от 1 до 4</h4>
-            <p class="modal-ticket__desc">Каждое число кратно увеличивает шансы на победу</p>
-            <table class="modal-ticket-table">
-              <tr class="modal-ticket-table__row">
-                <td class="modal-ticket-table__td">1</td>
-                <td class="modal-ticket-table__td">2</td>
-                <td class="modal-ticket-table__td">3</td>
-                <td class="modal-ticket-table__td">4</td>
-              </tr>
-            </table>
-          </div>
-          <div class="modal-ticket">
-            <h4 class="modal-ticket__title">Автоматическое заполнение</h4>
-            <p class="modal-ticket__desc">Используйте случайные комбинации чисел</p>
-            <ul class="modal-ticket-list">
-              <li class="modal-ticket-list__item"><img src="img/svg/range.svg"></li>
-              <li class="modal-ticket-list__item modal-ticket-list__item--one"></li>
-              <li class="modal-ticket-list__item modal-ticket-list__item--two"></li>
-              <li class="modal-ticket-list__item modal-ticket-list__item--four"><span class="modal-ticket-list__circle"></span></li>
-              <li class="modal-ticket-list__item modal-ticket-list__item--four-revert"><span class="modal-ticket-list__circle-revert"></span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--include ../includes/modals/number-ticket-->
   </body>
 </html>
