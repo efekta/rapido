@@ -1071,6 +1071,8 @@ select:-webkit-autofill:focus {
 }
 
 .modal.js-visible .modal-overlay {
+  opacity: 1;
+  display: block;
   transition-delay: 0s;
 }
 
