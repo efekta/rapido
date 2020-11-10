@@ -9,7 +9,7 @@
 
 .banner {
   width: 308px;
-  height: 152px;
+  min-height: 152px;
   padding: 16px;
   border-radius: 16px;
   margin-right: 16px;
@@ -60,12 +60,14 @@
   justify-content: space-between;
   &__item {
     display: flex;
+    width: 48%;
     &--inner {
       margin: 0 15px;
     }
   }
   &__content {
-    margin-left: 12px;
+    width: calc(100% - 44px);
+    margin-left: auto;
   }
   &__desc {
     font-size: 12px;
@@ -83,4 +85,10 @@
       line-height: 16px;
     }
   }
+}
+.banner-start__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  //border-radius: 50%;
 }

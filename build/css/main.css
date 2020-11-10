@@ -767,7 +767,7 @@ select:-webkit-autofill:focus {
 
 .banner {
   width: 308px;
-  height: 152px;
+  min-height: 152px;
   padding: 16px;
   border-radius: 16px;
   margin-right: 16px;
@@ -822,6 +822,7 @@ select:-webkit-autofill:focus {
 
 .banner-start__item {
   display: flex;
+  width: 48%;
 }
 
 .banner-start__item--inner {
@@ -829,7 +830,8 @@ select:-webkit-autofill:focus {
 }
 
 .banner-start__content {
-  margin-left: 12px;
+  width: calc(100% - 44px);
+  margin-left: auto;
 }
 
 .banner-start__desc {
@@ -849,6 +851,12 @@ select:-webkit-autofill:focus {
 .banner-start__num--inner {
   font-size: 12px;
   line-height: 16px;
+}
+
+.banner-start__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 .tickets-wrapper {
