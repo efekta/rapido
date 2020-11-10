@@ -757,7 +757,6 @@ select:-webkit-autofill:focus {
 }
 
 .banner-slides {
-  position: relative;
   margin-bottom: 58px;
 }
 
@@ -767,7 +766,6 @@ select:-webkit-autofill:focus {
 
 .banner {
   width: 308px;
-  min-height: 152px;
   padding: 16px;
   border-radius: 16px;
   margin-right: 16px;
