@@ -1596,6 +1596,12 @@ select:-webkit-autofill:focus {
   z-index: 2;
 }
 
+.modal-summary-wrapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .modal-summary__head {
   display: flex;
   justify-content: space-between;
