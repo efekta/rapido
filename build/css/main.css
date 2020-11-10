@@ -1051,6 +1051,12 @@ select:-webkit-autofill:focus {
   height: 100%;
 }
 
+.modal.js-visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-overlay {
   position: fixed;
   z-index: 10;
