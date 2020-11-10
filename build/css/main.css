@@ -656,12 +656,11 @@ select:-webkit-autofill:focus {
 }
 
 .header-wrapper {
-  min-height: 60px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 .header-wrapper__user {
@@ -682,7 +681,6 @@ select:-webkit-autofill:focus {
 }
 
 .header-inner {
-  min-height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
