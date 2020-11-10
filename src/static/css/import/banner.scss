@@ -60,14 +60,12 @@
   justify-content: space-between;
   &__item {
     display: flex;
-    width: 48%;
     &--inner {
       margin: 0 15px;
     }
   }
   &__content {
-    width: calc(100% - 44px);
-    margin-left: auto;
+    margin-left: 16px;
   }
   &__desc {
     font-size: 12px;

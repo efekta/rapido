@@ -822,7 +822,6 @@ select:-webkit-autofill:focus {
 
 .banner-start__item {
   display: flex;
-  width: 48%;
 }
 
 .banner-start__item--inner {
@@ -830,8 +829,7 @@ select:-webkit-autofill:focus {
 }
 
 .banner-start__content {
-  width: calc(100% - 44px);
-  margin-left: auto;
+  margin-left: 16px;
 }
 
 .banner-start__desc {
