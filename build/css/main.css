@@ -851,6 +851,13 @@ select:-webkit-autofill:focus {
   line-height: 16px;
 }
 
+.banner-start__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
 .tickets-wrapper {
   text-align: center;
   padding-bottom: 25px;
