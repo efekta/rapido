@@ -5,16 +5,17 @@
   left: 0;
   right: 0;
   bottom: 0;
-  visibility: hidden;
+  display: none;
   width: 100%;
   height: 100%;
+}
+
+.modal.js-visible {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.modal.is-visible {
-  visibility: visible;
-}
+
 .modal-overlay {
   position: fixed;
   z-index: 10;
@@ -23,13 +24,14 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
+  display: none;
   opacity: 0;
-  transition: visibility 0s linear 0.3s, opacity 0.3s;
+  transition: all 0.3s ease-in-out;
 }
-.modal.is-visible .modal-overlay {
+
+.modal.js-visible .modal-overlay {
   opacity: 1;
-  visibility: visible;
+  display: block;
   transition-delay: 0s;
 }
 .modal-wrapper {
@@ -45,16 +47,26 @@
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   z-index: 10;
-  overflow-y: scroll;
+  overflow-y: auto;
+  &--gray {
+    background: #ECECED;
+  }
 }
-.modal-transition {
+.modal-wrapper--big-height {
+  height: 100vh;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.modal-wrapper--transition {
   transition: all 0.3s 0.12s;
   transform: translateY(-10%);
   opacity: 0;
+  display: none;
 }
-.modal.is-visible .modal-transition {
+.modal.js-visible .modal-wrapper--transition {
   transform: translateY(0);
   opacity: 1;
+  display: block;
 }
 
 .modal-close {
@@ -80,6 +92,13 @@
 .modal-close__icon {
   color: #4D555D;
 }
+
+.modal-close--inner {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
 .modal-delete {
   width: 40px;
   height: 40px;
@@ -99,9 +118,11 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.02);
   }
 }
+
 .modal-delete__icon {
   color: #4D555D;
 }
+
 .modal-header {
   position: relative;
   display: flex;
@@ -109,8 +130,9 @@
   align-items: center;
   padding: 24px;
 }
+
 .modal-header--border {
-  position: relative;
+  padding: 32px 24px;
   &:before {
     content: "";
     position: absolute;
@@ -132,4 +154,43 @@
 
 .modal-footer {
   padding: 0 24px 24px 24px;
+  &--pink {
+    position: relative;
+    background: linear-gradient(135deg, #E254F7 0%, #8444FE 100%);
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 0;
+      width: 100vw;
+      height: 25px;
+      background: radial-gradient(ellipse at center, #fff 0%, #fff 30%, transparent 30%);
+      background-size: 25px 25px;
+      background-repeat: repeat-x;
+    }
+  }
+}
+
+
+.modal-btn {
+  display: block;
+  padding: 16px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  &--black {
+    background: #03090F;
+    color: $white;
+  }
+  &--white {
+    background: $white;
+  }
+  &--big {
+    width: 100%;
+  }
 }

@@ -1,0 +1,123 @@
+.modal-auth-wrapp {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+.modal-header--auth {
+  justify-content: flex-start;
+}
+.form-auth {
+  padding: 24px;
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+}
+.form-auth__item {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 20px 16px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  &--error {
+    border: 1px solid #FD4949;
+  }
+}
+.form-auth__error {
+  color: #FD4949;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-top: -8px;
+  margin-bottom: 18px;
+}
+.form-auth__error-link {
+  display: inline-block;
+  margin-left: 5px;
+  border-bottom: 1px solid #FD4949;
+}
+.form-auth__input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+.form-auth__input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4D555D;
+}
+.form-auth__input::-moz-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4D555D;
+}
+
+.form-auth__input:-moz-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4D555D;
+}
+
+.form-auth__input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4D555D;
+}
+
+.form-auth__icon-pass {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 19px;
+  height: 16px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.form-auth__btn {
+  width: 100%;
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F6BA1E;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  margin-top: 58px;
+  &--disabled {
+    background: rgba(3, 9, 15, 0.05);
+    cursor: none;
+    color: rgba(3, 9, 15, .2);
+  }
+  &--no-top {
+    margin-top: 0;
+  }
+}
+.auth-link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.auth-link__icon {
+  margin-right: 10px;
+}

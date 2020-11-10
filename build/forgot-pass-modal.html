@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>by_ticket_empty</title>
+    <title>forgot-pass-modal</title>
     <!--link(href="libs/owl.carousel/owl.carousel.min.css" type="text/css"  data-template-style="true"  rel="stylesheet")-->
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -183,26 +183,21 @@
     </div>
     <div class="modal js-visible">
       <div class="modal-overlay"></div>
-      <div class="modal-wrapper modal-wrapper--transition">
-        <div class="modal-header modal-header--border">
-          <button class="modal-close"><img class="modal-close__icon" src="img/svg/Close.svg"></button>
-          <h2 class="modal-header__title">Добавить билеты</h2>
-        </div>
-        <div class="modal-body">
-          <form class="extended-bid-form">
-            <div class="extended-bid"><span class="extended-bid__desc">Расширенная ставка</span>
-              <div class="extended-calc"><span class="extended-calc__icon">+</span><span class="extended-calc__number">2</span><span class="extended-calc__icon">-</span></div>
+      <div class="modal-wrapper modal-wrapper--big-height modal-wrapper--transition modal-wrapper--gray">
+        <div class="modal-auth-wrapp">
+          <div class="modal-header modal-header--auth"><img class="modal-header__logo" src="img/svg/logo-horizontal.svg" alt="logo">
+            <button class="modal-close modal-close--inner"><img class="modal-close__icon" src="img/svg/Close.svg" alt="close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-auth">
+              <h2 class="form-auth__title">Войти в аккаунт</h2>
+              <div class="form-auth__item">
+                <input class="form-auth__input" type="text" placeholder="E-mail, телефон или логин">
+              </div>
+              <button class="form-auth__btn form-auth__btn--no-top" type="submit">Отправить код</button>
             </div>
-            <div class="extended-bid-content">
-              <div class="extended-bid-content__text">Выберете от 1 до 4х бонусных чисел во второй части экрана</div>
-            </div>
-            <div class="extended-bid"><span class="extended-bid__desc">Количество билетов</span>
-              <div class="extended-bid-content extended-bid-content--inner"><span class="extended-bid-content__count">+1</span><span class="extended-bid-content__count extended-bid-content__count--active">+3</span><span class="extended-bid-content__count">+5</span><span class="extended-bid-content__count">+10</span><span class="extended-bid-content__count">+25</span></div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="modal-btn modal-btn--big modal-btn--black">Добавить <span>6</span> билетов – <span>1 500</span>₽</button>
+          </div>
+          <div class="modal-footer"><a class="auth-link" href=""><img class="auth-link__icon" src="img/svg/auth-prev-icon.svg" alt="prev"><span>Забыли пароль?</span></a></div>
         </div>
       </div>
     </div>

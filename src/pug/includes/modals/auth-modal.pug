@@ -1,0 +1,22 @@
+.modal.js-visible
+    .modal-overlay
+    .modal-wrapper.modal-wrapper--big-height.modal-wrapper--transition.modal-wrapper--gray
+        .modal-auth-wrapp
+            .modal-header.modal-header--auth
+                img.modal-header__logo(src="img/svg/logo-horizontal.svg" alt="logo")
+                button.modal-close.modal-close--inner
+                    img.modal-close__icon(src="img/svg/Close.svg" alt="close")
+            .modal-body
+                .form-auth
+                    h2.form-auth__title Войти в аккаунт
+                    .form-auth__item.form-auth__item--error
+                        input.form-auth__input(type="text" placeholder="E-mail, телефон или логин")
+                    p.form-auth__error Аккаунт не найден.
+                        a(href="").form-auth__error-link Регистрация
+                    .form-auth__item
+                        input.form-auth__input(type="text" placeholder="Пароль")
+                        img.form-auth__icon-pass(src="img/svg/eye.svg" alt="eye")
+
+                    button(type="submit").form-auth__btn.form-auth__btn--disabled Войти
+            .modal-footer
+                a.auth-link(href="") Забыли пароль?

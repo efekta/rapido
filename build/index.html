@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="app" style="background-image: url('img/Background.png')">
+    <div class="g-app" style="background-image: url('img/Background.png')">
       <svg style="display: none"></svg>
       <header class="header">
-        <div class="container">
+        <div class="g-container">
           <div class="header-wrapper"><a class="header-wrapper__user" href=""><img src="img/svg/union.svg"></a>
             <ul class="games-slider">
               <div class="games-slider__item active"><img src="img/svg/788.svg"></div>
@@ -22,8 +22,8 @@
           </div>
         </div>
       </header>
-      <section class="main">
-        <div class="container">
+      <section class="g-main">
+        <div class="g-container">
           <div class="banner-slides">
             <div class="banner banner--pink">
               <div class="banner-head">
@@ -46,26 +46,9 @@
                 </div>
               </div>
             </div>
-            <!--.banner.banner--green-->
-            <!--    .banner-head-->
-            <!--        h3.banner-head__title Рапидо-->
-            <!--        p.banner-head__edition Тираж-->
-            <!--            span №178270-->
-            <!--    p.banner-edition-orders <b>Cегодня — 80 000</b> ₽ выплачено, <b>328</b> продано билетов-->
-            <!--    .banner-start-->
-            <!--        .banner-start__item-->
-            <!--            img.banner-start__icon(src="img/svg/Timer.svg")-->
-            <!--            .banner-start__content-->
-            <!--                p.banner-start__desc До начала-->
-            <!--                p.banner-start__num 04:10-->
-            <!--        .banner-start__item-->
-            <!--            img.banner-start__icon(src="img/svg/Jackpot.svg")-->
-            <!--            .banner-start__content-->
-            <!--                p.banner-start__desc Джек пот-->
-            <!--                p.banner-start__num 2 499 999 ₽-->
           </div>
         </div>
-        <div class="container">
+        <div class="g-container">
           <div class="tickets-wrapper">
             <div class="tickets tickets--show">
               <div class="tickets-head">
@@ -198,11 +181,11 @@
         </div>
       </section>
     </div>
-    <div class="modal is-visible">
-      <div class="modal-overlay modal-toggle"></div>
-      <div class="modal-wrapper modal-transition">
+    <div class="modal js-visible">
+      <div class="modal-overlay"></div>
+      <div class="modal-wrapper modal-wrapper--transition">
         <div class="modal-header modal-header--border">
-          <button class="modal-close modal-toggle"><img class="modal-close__icon" src="img/svg/Close.svg"></button>
+          <button class="modal-close"><img class="modal-close__icon" src="img/svg/Close.svg"></button>
           <h2 class="modal-header__title">Добавить билеты</h2>
         </div>
         <div class="modal-body">
@@ -219,7 +202,7 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button class="extended-bid-btn">Добавить <span>6</span> билетов – <span>1 500</span>₽</button>
+          <button class="modal-btn modal-btn--big modal-btn--black">Добавить <span>6</span> билетов – <span>1 500</span>₽</button>
         </div>
       </div>
     </div>

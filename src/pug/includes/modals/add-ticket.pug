@@ -1,8 +1,8 @@
-.modal.is-visible
-    .modal-overlay.modal-toggle
-    .modal-wrapper.modal-transition
+.modal.js-visible
+    .modal-overlay
+    .modal-wrapper.modal-wrapper--transition
         .modal-header.modal-header--border
-            button.modal-close.modal-toggle
+            button.modal-close
                 img.modal-close__icon(src="img/svg/Close.svg")
             h2.modal-header__title Добавить билеты
         .modal-body
@@ -24,4 +24,4 @@
                         span.extended-bid-content__count +10
                         span.extended-bid-content__count +25
         .modal-footer
-            button.extended-bid-btn Добавить <span>6</span> билетов – <span>1 500</span>₽
+            button.modal-btn.modal-btn--big.modal-btn--black Добавить <span>6</span> билетов – <span>1 500</span>₽

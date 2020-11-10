@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="app" style="background-image: url('img/Background.png')">
+    <div class="g-app" style="background-image: url('img/Background.png')">
       <svg style="display: none"></svg>
       <header class="header">
-        <div class="container">
+        <div class="g-container">
           <div class="header-wrapper"><a class="header-wrapper__user" href=""><img src="img/svg/union.svg"></a>
             <ul class="games-slider">
               <div class="games-slider__item active"><img src="img/svg/788.svg"></div>
@@ -22,8 +22,8 @@
           </div>
         </div>
       </header>
-      <section class="main">
-        <div class="container">
+      <section class="g-main">
+        <div class="g-container">
           <div class="banner-slides">
             <div class="banner banner--pink">
               <div class="banner-head">
@@ -46,26 +46,9 @@
                 </div>
               </div>
             </div>
-            <!--.banner.banner--green-->
-            <!--    .banner-head-->
-            <!--        h3.banner-head__title Рапидо-->
-            <!--        p.banner-head__edition Тираж-->
-            <!--            span №178270-->
-            <!--    p.banner-edition-orders <b>Cегодня — 80 000</b> ₽ выплачено, <b>328</b> продано билетов-->
-            <!--    .banner-start-->
-            <!--        .banner-start__item-->
-            <!--            img.banner-start__icon(src="img/svg/Timer.svg")-->
-            <!--            .banner-start__content-->
-            <!--                p.banner-start__desc До начала-->
-            <!--                p.banner-start__num 04:10-->
-            <!--        .banner-start__item-->
-            <!--            img.banner-start__icon(src="img/svg/Jackpot.svg")-->
-            <!--            .banner-start__content-->
-            <!--                p.banner-start__desc Джек пот-->
-            <!--                p.banner-start__num 2 499 999 ₽-->
           </div>
         </div>
-        <div class="container">
+        <div class="g-container">
           <div class="tickets-wrapper">
             <div class="tickets tickets--show">
               <div class="tickets-head">
@@ -198,16 +181,87 @@
         </div>
       </section>
     </div>
-    <div class="modal is-visible">
-      <div class="modal-overlay modal-toggle"></div>
-      <div class="modal-wrapper modal-transition">
+    <div class="modal js-visible">
+      <div class="modal-overlay"></div>
+      <div class="modal-wrapper modal-wrapper--big-height modal-wrapper--transition">
         <div class="modal-header modal-header--border">
           <button class="modal-close"><img class="modal-close__icon" src="img/svg/Close.svg"></button>
           <h2 class="modal-header__title">Оплатить билеты</h2>
         </div>
-        <div class="modal-body">
-          <div class="modal-ticket-summary"></div>
-        </div>
+        <form class="modal-form-summary">
+          <div class="modal-body">
+            <div class="modal-ticket-summary">
+              <div class="modal-summary">
+                <div class="modal-summary__head">
+                  <div class="modal-summary__title"><img src="img/svg/Multiplication.svg"><span class="modal-summary__text">Множитель</span></div>
+                  <div class="modal-summary-counter"><span class="modal-summary-counter__icon modal-summary-counter__icon--disable">-</span><span class="modal-summary-counter__num">1</span><span class="modal-summary-counter__icon">+</span></div>
+                </div>
+                <div class="extended-bid-content extended-bid-content--text-center">
+                  <p class="extended-bid-content__text extended-bid-content__text--width">Кратно увеличиваем все выигрыши</p>
+                </div>
+              </div>
+              <div class="modal-summary">
+                <div class="modal-summary__head">
+                  <div class="modal-summary__title"><img src="img/svg/MultiplicationInner.svg"><span class="modal-summary__text">Кол-во игр подряд</span></div>
+                  <div class="modal-summary-counter"><span class="modal-summary-counter__icon modal-summary-counter__icon--disable">-</span><span class="modal-summary-counter__num">1</span><span class="modal-summary-counter__icon">+</span></div>
+                </div>
+                <ul class="modal-summary-list">
+                  <li class="modal-summary-list__item">+1</li>
+                  <li class="modal-summary-list__item">+5</li>
+                  <li class="modal-summary-list__item">+10</li>
+                  <li class="modal-summary-list__item">+25</li>
+                </ul>
+                <div class="extended-bid-content extended-bid-content--text-center">
+                  <p class="extended-bid-content__text extended-bid-content__text--width">Какой-то текст подсказки <br>вторая строка</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer modal-footer--pink">
+            <div class="modal-summary-order">
+              <h2 class="modal-summary-order__title"><span>5</span> Билетов  – <span>1 500</span> ₽</h2>
+              <ul class="summary-order-list">
+                <li class="summary-order-list__item">
+                  <div class="summary-order-list__content"><span class="summary-order-list__pic-wrapp"><img class="summary-order-list__pic" src="img/svg/visa.svg"></span>
+                    <div class="summary-order-list__text">
+                      <p class="summary-order-list__title">Банковская карта</p>
+                      <p class="summary-order-list__desc">Mastercard, Visa, МИР</p>
+                    </div>
+                  </div>
+                  <div class="summary-order-input-wrapp">
+                    <input class="summary-order-input" id="card" type="radio" name="card">
+                    <label class="summary-order-label" for="card"></label>
+                  </div>
+                </li>
+                <li class="summary-order-list__item">
+                  <div class="summary-order-list__content"><span class="summary-order-list__pic-wrapp"><img class="summary-order-list__pic" src="img/svg/pay.svg"></span>
+                    <div class="summary-order-list__text">
+                      <p class="summary-order-list__title">Оплатить кошельком</p>
+                      <p class="summary-order-list__desc">На балансе – <span>2 000</span>₽</p>
+                    </div>
+                  </div>
+                  <div class="summary-order-input-wrapp">
+                    <input class="summary-order-input" id="pay" type="radio" name="card">
+                    <label class="summary-order-label" for="pay"></label>
+                  </div>
+                </li>
+                <li class="summary-order-list__item summary-order-list__item--disabled">
+                  <div class="summary-order-list__content"><span class="summary-order-list__pic-wrapp"><img class="summary-order-list__pic" src="img/svg/bonus-green.svg"></span>
+                    <div class="summary-order-list__text">
+                      <p class="summary-order-list__title">Специальный бонус</p>
+                      <p class="summary-order-list__desc"><span>0<span> Баллов доступно</p>
+                    </div>
+                  </div>
+                  <div class="summary-order-input-wrapp">
+                    <input class="summary-order-input" id="bonus" type="checkbox">
+                    <label class="summary-order-label" for="bonus"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="modal-btn modal-btn--big modal-btn--white">Оплатить <span>1 500</span> ₽</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
