@@ -919,9 +919,6 @@ select:-webkit-autofill:focus {
   position: relative;
   width: 156px;
   min-height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 16px;
   background: url("../img/SubtractInner.png") no-repeat;
   background-size: 100% 100%;
@@ -929,6 +926,9 @@ select:-webkit-autofill:focus {
 }
 
 .order-tickets__item--add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url("../img/Subtract.png") no-repeat;
 }
 
