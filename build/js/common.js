@@ -1,32 +1,15 @@
-// $(document).ready(function(){
-//     // slider
-//     if ( $(window).width() <= 768 ) {
-//         if (!$('.banner-slides').find('.owl-carousel').hasClass('owl-loaded')) {
-//             $('.banner-slides').find('.owl-carousel').owlCarousel({
-//                 dots: false,
-//                 items: 2,
-//                 loop: true,
-//                 nav: false,
-//                 // margin:10,
-//                 responsive: {
-//                     0: {
-//                         items: 1.25
-//                     },
-//                     320: {
-//                         items: 1.25
-//                     },
-//                     600: {
-//                         items: 2
-//                     },
-//                     768: {
-//                         items: 2
-//                     },
-//                     1200: {
-//                         items: 3
-//                     }
-//                 },
-//                 smartSpeed: 350
-//             });
-//         }
-//     }
-// });
+$(document).ready(function(){
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    (function init100vh(){
+        function setHeight() {
+            var vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        setHeight();
+        window.addEventListener('resize', setHeight);
+    })();
+});
