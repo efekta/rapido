@@ -12,6 +12,10 @@ html(lang="ru-RU")
         .g-app(style="background-image: url('img/Background.png')")
             include ../includes/svg-sprite.pug
             block header
+            .g-wrapper
+                .g-side
+                .g-content
+                    block content
+                .g-side.g-side--hide
 
-            block content
         include ../includes/modals/auth-modal

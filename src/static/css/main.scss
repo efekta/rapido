@@ -10,6 +10,7 @@
 @import "import/header-to-scroll";
 @import "import/games-slider";
 @import "import/banner";
+@import "import/banner-desktop";
 @import "import/tickets";
 
 @import "import/modals/modals";
@@ -17,3 +18,6 @@
 @import "import/modals/number-ticket-modal";
 @import "import/modals/ticket-summary-modal";
 @import "import/modals/auth-modal";
+
+
+@import "import/adaptive";

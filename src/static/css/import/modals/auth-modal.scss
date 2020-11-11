@@ -110,6 +110,14 @@
     margin-top: 0;
   }
 }
+.modal-footer--auth {
+  display: block;
+}
+
+.form-auth__btn--mob {
+  display: none;
+}
+
 .auth-link {
   font-weight: bold;
   font-size: 16px;

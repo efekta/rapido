@@ -47,11 +47,14 @@
   z-index: 10;
   overflow-y: auto;
   &--gray {
-    background: #ECECED;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(9px);
   }
 }
 .modal-wrapper--big-height {
-  height: 100vh;
+  height: 100%;
+  max-height: 100vh;
+  overflow-y: auto;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -190,4 +193,8 @@
   &--big {
     width: 100%;
   }
+}
+
+.form-auth__btn--mob {
+  display: none;
 }
