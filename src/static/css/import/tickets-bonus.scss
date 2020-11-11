@@ -1,0 +1,116 @@
+.tickets-bonus {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.tickets-bonus__count {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tickets-bonus__list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tickets-bonus__text {
+  position: relative;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  padding-left: 28px;
+}
+.tickets-bonus__text:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 28px;
+  height: 24px;
+  background: url('../img/svg/extended-bid.svg') no-repeat;
+  background-size: 100% 100%;
+  transform: translateY(-50%);
+}
+
+
+.tickets-bonus-calc {
+  position: relative;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+.tickets-bonus-calc__number {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 5px;
+}
+.tickets-bonus-calc__icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F3EDF7;
+  border: 1px solid #E9E3F2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.tickets-bonus-calc__popup {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  min-width: 203px;
+  margin-top: 10px;
+  padding: 15px 12px;
+  background: #121314;
+  border-radius: 6px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+  color: #F9F7FA;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: #121314;
+    border-radius: 3px;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 3;
+  }
+}
+
+.bonus-list {
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.bonus-list__item {
+  min-width: 64px;
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4E51DF;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}

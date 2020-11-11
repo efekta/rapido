@@ -1,0 +1,152 @@
+.tickets-wrapper.tickets-wrapper--desktop
+    .tickets.tickets--show
+        .tickets-head.tickets-head--desktop
+            h3.tickets-title.tickets-title--desktop Купить билеты
+            p.tickets-desc.tickets-desc--desktop Быстрое добавление билетов
+                span.tickets-desc__icon
+        .tickets-bonus
+            .tickets-bonus__count
+                    p.tickets-bonus__text Кол-во бонусных чисел
+                    .tickets-bonus-calc
+                        span.tickets-bonus-calc__icon +
+                        span.tickets-bonus-calc__number 2
+                        span.tickets-bonus-calc__icon -
+                        p.tickets-bonus-calc__popup Выберете от 1 до 4х бонусных чисел во второй части экрана
+            .tickets-bonus__list
+                ul.bonus-list
+                    li.bonus-list__item +1
+                    li.bonus-list__item +3
+                    li.bonus-list__item +5
+                    li.bonus-list__item +10
+        .tickets-desktop
+            .number-tickets
+                h4.number-tickets__title Билет №3
+                ul.number-tickets-list
+                    li.number-tickets-list__item
+                        img(src="img/svg/range.svg")
+                    li.number-tickets-list__item.number-tickets-list__item--one
+                    li.number-tickets-list__item.number-tickets-list__item--two
+                    li.number-tickets-list__item.number-tickets-list__item--four
+                        span.number-tickets-list__circle
+                    li.number-tickets-list__item.number-tickets-list__item--four-revert
+                        span.number-tickets-list__circle-revert
+                p.number-tickets__title-small Выберите 8 значений
+                table.number-tickets-table
+                    tr.number-tickets-table__row
+                        td.number-tickets-table__td 1
+                        td.number-tickets-table__td 2
+                        td.number-tickets-table__td.number-tickets-table__td--pink-active 3
+                        td.number-tickets-table__td 4
+                        td.number-tickets-table__td 5
+                    tr.number-tickets-table__row
+                        td.number-tickets-table__td 6
+                        td.number-tickets-table__td 7
+                        td.number-tickets-table__td 8
+                        td.number-tickets-table__td.number-tickets-table__td--pink-active 9
+                        td.number-tickets-table__td 10
+                    tr.number-tickets-table__row
+                        td.number-tickets-table__td 11
+                        td.number-tickets-table__td 12
+                        td.number-tickets-table__td 13
+                        td.number-tickets-table__td 14
+                        td.number-tickets-table__td 15
+                    tr.number-tickets-table__row
+                        td.number-tickets-table__td 16
+                        td.number-tickets-table__td 17
+                        td.number-tickets-table__td 18
+                        td.number-tickets-table__td 19
+                        td.number-tickets-table__td 20
+
+                p.number-tickets__title-small Выберите бонусные числа от 1 до 4
+                table.number-tickets-table
+                    tr.number-tickets-table__row
+                        td.number-tickets-table__td 1
+                        td.number-tickets-table__td 2
+                        td.number-tickets-table__td.number-tickets-table__td--orange-active 3
+                        td.number-tickets-table__td 4
+                p.number-tickets__desc Каждое число кратно увеличивает шансы на победу
+
+            .order-tickets.order-tickets--desktop
+                .order-tickets__item.order-tickets__item-desktop.order-tickets__border-row
+                    span.order-tickets__del -
+                    span.order-tickets__count #5
+                    table.order-tickets__table
+                        tr.tr
+                            td.td 3
+                            td.td 5
+                            td.td 7
+                            td.td 9
+                        tr.tr
+                            td.td 12
+                            td.td 15
+                            td.td 16
+                            td.td 19
+                        tr.tr
+                            td.td.disabled 1
+                            td.td 2
+                            td.td.disabled 3
+                            td.td.disabled 4
+                .order-tickets__item.order-tickets__item-desktop.order-tickets__border-row
+                    span.order-tickets__del -
+                    span.order-tickets__count #5
+                    table.order-tickets__table
+                        tr.tr
+                            td.td 3
+                            td.td 5
+                            td.td 7
+                            td.td 9
+                        tr.tr
+                            td.td 12
+                            td.td 15
+                            td.td 16
+                            td.td 19
+                        tr.tr
+                            td.td.disabled 1
+                            td.td 2
+                            td.td.disabled 3
+                            td.td.disabled 4
+                .order-tickets__item.order-tickets__item-desktop.order-tickets__border-row
+                    span.order-tickets__del -
+                    span.order-tickets__count #5
+                    table.order-tickets__table
+                        tr.tr
+                            td.td 3
+                            td.td 5
+                            td.td 7
+                            td.td 9
+                        tr.tr
+                            td.td 12
+                            td.td 15
+                            td.td 16
+                            td.td 19
+                        tr.tr
+                            td.td.disabled 1
+                            td.td 2
+                            td.td.disabled 3
+                            td.td.disabled 4
+                .order-tickets__item.order-tickets__item-desktop.order-tickets__border-row
+                    span.order-tickets__del -
+                    span.order-tickets__count #5
+                    table.order-tickets__table
+                        tr.tr
+                            td.td 3
+                            td.td 5
+                            td.td 7
+                            td.td 9
+                        tr.tr
+                            td.td 12
+                            td.td 15
+                            td.td 16
+                            td.td 19
+                        tr.tr
+                            td.td.disabled 1
+                            td.td 2
+                            td.td.disabled 3
+                            td.td.disabled 4
+
+    .tickets.tickets--hide
+        img.tickets__images(src="img/tickets.png")
+        h3.tickets__title Купить билеты
+        p.tickets__desc Поясняющий текст. Например - Нажмите “Добавить билеты”, чтобы начать покупку
+    include btn-wrapp-desktop
+

@@ -1,5 +1,5 @@
 /*MODAL*/
-@media(min-width: 768px) {
+@media(min-width: $container-sm) {
   /*AUTH*/
   .modal-wrapper--big-height {
     height: auto;
@@ -65,7 +65,43 @@
     display: none;
   }
 
-  .banner--desktop {
+  .banner-desktop {
     display: block;
+  }
+
+  /*Tickets Desktop*/
+  .tickets-wrapper--mob {
+    display: none;
+  }
+
+  /*TICKETS DESKTOP*/
+  .tickets {
+    margin-bottom: 24px;
+  }
+  .tickets-wrapper--desktop {
+    display: block;
+  }
+  .tickets-bonus {
+    display: flex;
+  }
+  .tickets-wrapper {
+    text-align: left;
+    padding-bottom: 0;
+  }
+}
+
+@media(max-width: $container) {
+  .tickets-bonus {
+    flex-wrap: wrap;
+  }
+}
+@media(max-width: $container-md) {
+  /*BANNER*/
+  .banner-desktop__content-wrapp {
+    width: calc(100% - 140px);
+  }
+  .banner-desktop::before  {
+    width: 140px;
+    height: 140px;
   }
 }

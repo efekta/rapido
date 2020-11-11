@@ -10,9 +10,12 @@ html(lang="ru-RU")
         include ../includes/links.pug
     body
         .g-app(style="background-image: url('img/Background.png')")
-            include ../includes/svg-sprite.pug
+            //include ../includes/svg-sprite.pug
             block header
-
-            block content
+            .g-wrapper
+                .g-side
+                .g-content
+                    block content
+                .g-side.g-side--hide
         include ../includes/modals/buy-ticket-summary-modal
         script(src="js/common.js")
