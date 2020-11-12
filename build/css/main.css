@@ -2961,7 +2961,6 @@ select:-webkit-autofill:focus {
   left: 50%;
   bottom: 0;
   width: 684px;
-  height: 385px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   z-index: 10;
