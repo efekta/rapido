@@ -12,4 +12,29 @@ $(document).ready(function(){
         setHeight();
         window.addEventListener('resize', setHeight);
     })();
+
+
+    var slider = document.querySelector('.range');
+
+
+    var testAndWK = window.getComputedStyle(slider,'::-webkit-slider-thumb').height;
+    if (!testAndWK) {
+        slider.style.WebkitAppearance = 'slider-horizontal';
+    }
+
+    slider.addEventListener('input',startTimer,false);
+    slider.addEventListener('change',startTimer,false);
+
+    var timeout;
+    function startTimer() {
+        var that = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            handleEvent(that);
+        },100);
+    }
+
+    function handleEvent(slider) {
+        // Fires when user doesn't slide for 100ms
+    }
 });

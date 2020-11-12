@@ -29,10 +29,11 @@
         top: 50%;
         left: 50%;
         z-index: 2;
-        width: 19px;
-        height: 19px;
-        background: url("../img/svg/disabled.svg") no-repeat;
+        width: 11px;
+        height: 14px;
+        background: url("../img/disabled.png") no-repeat;
         transform: translate(-50%, -50%);
+        background-size: 11px 14px;
       }
     }
     img {

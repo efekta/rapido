@@ -1,3 +1,13 @@
+@media(min-width: $container-md) {
+  /*HEADER*/
+  .header-desktop {
+    display: block;
+  }
+
+  .header {
+    display: none;
+  }
+}
 /*MODAL*/
 @media(min-width: $container-sm) {
   /*AUTH*/
@@ -54,11 +64,7 @@
     text-align: left;
   }
 
-
   /*HEADER*/
-  .header {
-    margin-bottom: 0;
-  }
 
   /*BANNER*/
   .banner-slides--mob {
@@ -88,6 +94,7 @@
     text-align: left;
     padding-bottom: 0;
   }
+
 }
 
 @media(max-width: $container) {

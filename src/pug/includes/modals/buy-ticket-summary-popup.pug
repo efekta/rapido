@@ -1,0 +1,57 @@
+.popup.js-popup-visible
+    .popup-overlay
+    .popup-wrapper.popup-wrapper--bottom.popup-wrapper--transition
+        form.popup-summary
+            .popup-summary__item
+                h2.popup-summary__title Отлично, не хотел бы увеличить шанс на выигрыш джекпота?
+                .range-filter
+                    .range-filter__item
+                        .range-filter__title
+                            img(src="img/Multiplication.png")
+                            span.range-filter__text Множитель
+                            span.range-filter__icon
+                        .range-filter__num 1X
+                    input.range(name="range" type="range" min="0" max="10" value="1")
+                .range-filter
+                    .range-filter__item
+                        .range-filter__title
+                            img(src="img/Circulation.png")
+                            span.range-filter__text Кол-во игр подряд
+                            span.range-filter__icon
+                        .range-filter__num 1X
+                    input.range(name="range" type="range" min="0" max="10" value="10")
+            .popup-summary__item.popup-summary__item--pink
+                h3.popup-summary__subtitle <span>5</span> Билетов  – <span>1 500</span> ₽
+                ul.popup-order-list
+                    li.popup-order-list__item
+                        .popup-order-list__content
+                            span.popup-order-list__pic-wrapp
+                                img.popup-order-list__pic(src="img/svg/visa.svg")
+                            .popup-order-list__text
+                                p.popup-order-list__title Банковская карта
+                                p.popup-order-list__desc Mastercard, Visa, МИР
+                        .popup-order-input-wrapp
+                            input#card-1.popup-order-input(type="radio" name="card")
+                            label.popup-order-label(for="card-1")
+                    li.popup-order-list__item
+                        .popup-order-list__content
+                            span.popup-order-list__pic-wrapp
+                                img.popup-order-list__pic(src="img/svg/pay.svg")
+                            .popup-order-list__text
+                                p.popup-order-list__title Оплатить кошельком
+                                p.popup-order-list__desc На балансе – <span>2 000</span>₽
+                        .popup-order-input-wrapp
+                            input#pay-1.popup-order-input(type="radio" name="card")
+                            label.popup-order-label(for="pay-1")
+                    li.popup-order-list__item.summary-order-list__item--disabled
+                        .popup-order-list__content
+                            span.popup-order-list__pic-wrapp
+                                img.popup-order-list__pic(src="img/svg/bonus-green.svg")
+                            .popup-order-list__text
+                                p.popup-order-list__title Специальный бонус
+                                p.popup-order-list__desc <span>0<span> Баллов доступно
+                        .popup-order-input-wrapp
+                            input#bonus.popup-order-input(type="checkbox")
+                            label.popup-order-label(for="bonus")
+                button.modal-btn.modal-btn--big.modal-btn--white Оплатить <span>1 500</span> ₽
+

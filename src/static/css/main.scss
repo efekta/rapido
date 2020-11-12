@@ -7,7 +7,10 @@
 
 
 @import "import/header";
+@import "import/header-desktop";
 @import "import/header-to-scroll";
+@import "import/header-game";
+@import "import/header-auth";
 @import "import/games-slider";
 @import "import/banner";
 @import "import/banner-desktop";
@@ -16,12 +19,14 @@
 @import "import/tickets-bonus";
 @import "import/number-ticket";
 @import "import/btn-ticket-desktop";
+@import "import/range";
 
 @import "import/modals/modals";
 @import "import/modals/add-ticket-modal";
 @import "import/modals/number-ticket-modal";
 @import "import/modals/ticket-summary-modal";
 @import "import/modals/auth-modal";
+@import "import/modals/ticket-pay-popup";
 
 
 @import "import/adaptive";

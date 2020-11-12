@@ -11,13 +11,49 @@
     <div class="g-app" style="background-image: url('img/Background.png')">
       <!--include ../includes/svg-sprite.pug-->
       <header class="header">
-        <div class="g-container">
-          <div class="header-wrapper"><a class="header-wrapper__user" href=""><img src="img/svg/union.svg"></a>
-            <ul class="games-slider">
-              <div class="games-slider__item games-slider__item--pink games-slider__item--active"><img src="img/svg/lotery.svg"></div>
-              <div class="games-slider__item games-slider__item--inner"><img src="img/svg/bingo.svg"></div>
-              <div class="games-slider__item games-slider__item--disabled"><img src="img/svg/duel.svg"></div>
-            </ul><a class="header-wrapper__user" href=""><img src="img/svg/subtract.svg"></a>
+        <div class="header-wrapper"><a class="header-wrapper__user" href=""><img src="img/svg/union.svg"></a>
+          <ul class="games-slider">
+            <div class="games-slider__item games-slider__item--pink games-slider__item--active"><img src="img/svg/lotery.svg"></div>
+            <div class="games-slider__item games-slider__item--inner"><img src="img/svg/bingo.svg"></div>
+            <div class="games-slider__item games-slider__item--disabled"><img src="img/svg/duel.svg"></div>
+          </ul><a class="header-wrapper__user" href=""><img src="img/svg/subtract.svg"></a>
+        </div>
+      </header>
+      <header class="header-desktop">
+        <div class="header-wrapper"><a class="header-wrapper__logo" href=""><img src="img/svg/logo-desktop.svg"></a>
+          <div class="header-game-wrapp">
+            <div class="header-game">
+              <div class="header-game-box">
+                <div class="header-game-box__item header-game-box__item--pink header-game-box__item--active"><img src="img/svg/lotery.svg"></div>
+                <div class="header-game-box__item header-game-box__item--inner"><img src="img/svg/bingo.svg"></div>
+              </div>
+              <ul class="header-game-box header-game-box--disabled">
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+              </ul>
+            </div>
+            <div class="header-game">
+              <div class="header-game-box">
+                <div class="header-game-box__ticket"><img src="img/doll.png"></div>
+                <div class="header-game-box__ticket"><img src="img/pod.png"></div>
+                <div class="header-game-box__ticket"><img src="img/cherry.png"></div>
+              </div>
+              <ul class="header-game-box header-game-box--disabled">
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="header-auth"><a class="header-auth__link" href="">knmisha23</a>
+            <div class="header-auth__count">
+              <div class="header-count"><span class="header-count__icon header-count__icon--rub"></span><span class="header-count__num">18 282</span></div>
+              <div class="header-count"><span class="header-count__icon header-count__icon--order"></span><span class="header-count__num">580</span></div>
+            </div>
           </div>
         </div>
       </header>
@@ -442,7 +478,7 @@
           </div>
           <div class="modal-footer modal-footer--pink">
             <div class="modal-summary-order">
-              <h2 class="modal-summary-order__title"><span>5</span> Билетов  – <span>1 500</span> ₽</h2>
+              <h3 class="modal-summary-order__title"><span>5</span> Билетов  – <span>1 500</span> ₽</h3>
               <ul class="summary-order-list">
                 <li class="summary-order-list__item">
                   <div class="summary-order-list__content"><span class="summary-order-list__pic-wrapp"><img class="summary-order-list__pic" src="img/svg/visa.svg"></span>

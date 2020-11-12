@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>buy-ticket-summary</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="g-app" style="background-image: url('img/Background.png')">
+      <!--include ../includes/svg-sprite.pug-->
+      <header class="header">
+        <div class="header-wrapper"><a class="header-wrapper__user" href=""><img src="img/svg/union.svg"></a>
+          <ul class="games-slider">
+            <div class="games-slider__item games-slider__item--pink games-slider__item--active"><img src="img/svg/lotery.svg"></div>
+            <div class="games-slider__item games-slider__item--inner"><img src="img/svg/bingo.svg"></div>
+            <div class="games-slider__item games-slider__item--disabled"><img src="img/svg/duel.svg"></div>
+          </ul><a class="header-wrapper__user" href=""><img src="img/svg/subtract.svg"></a>
+        </div>
+      </header>
+      <header class="header-desktop">
+        <div class="header-wrapper"><a class="header-wrapper__logo" href=""><img src="img/svg/logo-desktop.svg"></a>
+          <div class="header-game-wrapp">
+            <div class="header-game">
+              <div class="header-game-box">
+                <div class="header-game-box__item header-game-box__item--pink header-game-box__item--active"><img src="img/svg/lotery.svg"></div>
+                <div class="header-game-box__item header-game-box__item--inner"><img src="img/svg/bingo.svg"></div>
+              </div>
+              <ul class="header-game-box header-game-box--disabled">
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+              </ul>
+            </div>
+            <div class="header-game">
+              <div class="header-game-box">
+                <div class="header-game-box__ticket"><img src="img/doll.png"></div>
+                <div class="header-game-box__ticket"><img src="img/pod.png"></div>
+                <div class="header-game-box__ticket"><img src="img/cherry.png"></div>
+              </div>
+              <ul class="header-game-box header-game-box--disabled">
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="header-auth"><a class="header-auth__link" href="">knmisha23</a>
+            <div class="header-auth__count">
+              <div class="header-count"><span class="header-count__icon header-count__icon--rub"></span><span class="header-count__num">18 282</span></div>
+              <div class="header-count"><span class="header-count__icon header-count__icon--order"></span><span class="header-count__num">580</span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="g-wrapper">
+        <div class="g-side"></div>
+        <div class="g-content">
+          <section class="g-main">
+            <div class="banner-slides banner-slides--mob">
+              <div class="banner banner--pink">
+                <div class="banner-head">
+                  <h3 class="banner-head__title">Рапидо</h3>
+                  <p class="banner-head__edition">Тираж<span class="banner-head__edit-num">№178270</span></p>
+                </div>
+                <p class="banner-edition-orders"><b>Cегодня — 80 000</b> ₽ выплачено, <b>328</b> продано билетов</p>
+                <div class="banner-start">
+                  <div class="banner-start__item"><img class="banner-start__icon" src="img/Timer.png">
+                    <div class="banner-start__content">
+                      <p class="banner-start__desc">До начала</p>
+                      <p class="banner-start__num">04:10</p>
+                    </div>
+                  </div>
+                  <div class="banner-start__item"><img class="banner-start__icon" src="img/Jackpot.png">
+                    <div class="banner-start__content">
+                      <p class="banner-start__desc">Джек пот</p>
+                      <p class="banner-start__num">2 499 999 ₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="banner banner--green">
+                <div class="banner-head">
+                  <h3 class="banner-head__title">Рапидо</h3>
+                  <p class="banner-head__edition">Тираж<span>№178270</span></p>
+                </div>
+                <p class="banner-edition-orders"><b>Cегодня — 80 000</b> ₽ выплачено, <b>328</b> продано билетов</p>
+                <div class="banner-start">
+                  <div class="banner-start__item"><img class="banner-start__icon" src="img/Timer.png">
+                    <div class="banner-start__content">
+                      <p class="banner-start__desc">До начала</p>
+                      <p class="banner-start__num">04:10</p>
+                    </div>
+                  </div>
+                  <div class="banner-start__item"><img class="banner-start__icon" src="img/Jackpot.png">
+                    <div class="banner-start__content">
+                      <p class="banner-start__desc">Джек пот</p>
+                      <p class="banner-start__num">2 499 999 ₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner banner-desktop banner--pink">
+              <div class="banner-desktop__content-wrapp">
+                <div class="banner-head">
+                  <h3 class="banner-head__title-desktop">Рапидо</h3>
+                  <p class="banner-head__edition-desktop">Тираж<span class="banner-head__edit-num">№178270</span></p>
+                </div>
+                <p class="banner-edition-orders-desktop"><b>Cегодня — 80 000</b> ₽ выплачено, <b>328</b> продано билетов</p>
+                <div class="banner-start">
+                  <div class="banner-start__item"><img class="banner-start__icon-desktop" src="img/Timer.png">
+                    <div class="banner-start__content">
+                      <p class="banner-start__desc">До начала</p>
+                      <p class="banner-start__num">04:10</p>
+                    </div>
+                  </div>
+                  <div class="banner-start__item"><img class="banner-start__icon-desktop" src="img/Jackpot.png">
+                    <div class="banner-start__content">
+                      <p class="banner-start__desc">Джек пот</p>
+                      <p class="banner-start__num">2 499 999 ₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tickets-wrapper tickets-wrapper--mob">
+              <div class="tickets tickets--show">
+                <div class="tickets-head">
+                  <h3 class="tickets-title">Купить билеты</h3>
+                  <button class="tickets-btn" type="button">Очистить все</button>
+                </div>
+                <div class="order-tickets">
+                  <div class="order-tickets__item order-tickets__item--add"><span class="tickets-add">+ Добавить билет</span></div>
+                  <div class="order-tickets__item order-tickets__border-row"><span class="order-tickets__del">-</span><span class="order-tickets__count">#5</span>
+                    <table class="order-tickets__table">
+                      <tr class="tr">
+                        <td class="td">3</td>
+                        <td class="td">5</td>
+                        <td class="td">7</td>
+                        <td class="td">9</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td">12</td>
+                        <td class="td">15</td>
+                        <td class="td">16</td>
+                        <td class="td">19</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td disabled">1</td>
+                        <td class="td">2</td>
+                        <td class="td disabled">3</td>
+                        <td class="td disabled">4</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="order-tickets__item order-tickets__border-row"><span class="order-tickets__del">-</span><span class="order-tickets__count">#5</span>
+                    <table class="order-tickets__table">
+                      <tr class="tr">
+                        <td class="td">3</td>
+                        <td class="td">5</td>
+                        <td class="td">7</td>
+                        <td class="td">9</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td">12</td>
+                        <td class="td">15</td>
+                        <td class="td">16</td>
+                        <td class="td">19</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td disabled">1</td>
+                        <td class="td">2</td>
+                        <td class="td disabled">3</td>
+                        <td class="td disabled">4</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="order-tickets__item order-tickets__border-row"><span class="order-tickets__del">-</span><span class="order-tickets__count">#5</span>
+                    <table class="order-tickets__table">
+                      <tr class="tr">
+                        <td class="td">3</td>
+                        <td class="td">5</td>
+                        <td class="td">7</td>
+                        <td class="td">9</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td">12</td>
+                        <td class="td">15</td>
+                        <td class="td">16</td>
+                        <td class="td">19</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td disabled">1</td>
+                        <td class="td">2</td>
+                        <td class="td disabled">3</td>
+                        <td class="td disabled">4</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="order-tickets__item order-tickets__border-row"><span class="order-tickets__del">-</span><span class="order-tickets__count">#5</span>
+                    <table class="order-tickets__table">
+                      <tr class="tr">
+                        <td class="td">3</td>
+                        <td class="td">5</td>
+                        <td class="td">7</td>
+                        <td class="td">9</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td">12</td>
+                        <td class="td">15</td>
+                        <td class="td">16</td>
+                        <td class="td">19</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td disabled">1</td>
+                        <td class="td">2</td>
+                        <td class="td disabled">3</td>
+                        <td class="td disabled">4</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="order-tickets__item order-tickets__border-row"><span class="order-tickets__del">-</span><span class="order-tickets__count">#5</span>
+                    <table class="order-tickets__table">
+                      <tr class="tr">
+                        <td class="td">3</td>
+                        <td class="td">5</td>
+                        <td class="td">7</td>
+                        <td class="td">9</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td">12</td>
+                        <td class="td">15</td>
+                        <td class="td">16</td>
+                        <td class="td">19</td>
+                      </tr>
+                      <tr class="tr">
+                        <td class="td disabled">1</td>
+                        <td class="td">2</td>
+                        <td class="td disabled">3</td>
+                        <td class="td disabled">4</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="tickets tickets--hide"><img class="tickets__images" src="img/tickets.png">
+                <h3 class="tickets__title">Купить билеты</h3>
+                <p class="tickets__desc">Поясняющий текст. Например - Нажмите “Добавить билеты”, чтобы начать покупку</p>
+              </div>
+              <div class="btn-ticket-wrapp">
+                <button class="btn-ticket btn-ticket--dark" type="button"><img class="btn-ticket__icon" src="img/svg/btn-plus.svg"><span>Добавить билеты</span></button>
+                <button class="btn-ticket btn-ticket--white" type="button"><span class="btn-ticket__count">5</span><img class="btn-ticket__icon" src="img/svg/card.svg"><span>Добавить билеты</span></button>
+              </div>
+            </div>
+            <div class="tickets-wrapper tickets-wrapper--desktop">
+              <div class="tickets tickets--show">
+                <div class="tickets-head tickets-head--desktop">
+                  <h3 class="tickets-title tickets-title--desktop">Купить билеты</h3>
+                  <p class="tickets-desc tickets-desc--desktop">Быстрое добавление билетов<span class="tickets-desc__icon"></span></p>
+                </div>
+                <div class="tickets-bonus">
+                  <div class="tickets-bonus__count">
+                    <p class="tickets-bonus__text">Кол-во бонусных чисел</p>
+                    <div class="tickets-bonus-calc"><span class="tickets-bonus-calc__icon">+</span><span class="tickets-bonus-calc__number">2</span><span class="tickets-bonus-calc__icon">-</span>
+                      <p class="tickets-bonus-calc__popup">Выберете от 1 до 4х бонусных чисел во второй части экрана</p>
+                    </div>
+                  </div>
+                  <div class="tickets-bonus__list">
+                    <ul class="bonus-list">
+                      <li class="bonus-list__item">+1</li>
+                      <li class="bonus-list__item">+3</li>
+                      <li class="bonus-list__item">+5</li>
+                      <li class="bonus-list__item">+10</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tickets-desktop">
+                  <div class="number-tickets">
+                    <h4 class="number-tickets__title">Билет №3</h4>
+                    <ul class="number-tickets-list">
+                      <li class="number-tickets-list__item"><img src="img/svg/range.svg"></li>
+                      <li class="number-tickets-list__item number-tickets-list__item--one"></li>
+                      <li class="number-tickets-list__item number-tickets-list__item--two"></li>
+                      <li class="number-tickets-list__item number-tickets-list__item--four"><span class="number-tickets-list__circle"></span></li>
+                      <li class="number-tickets-list__item number-tickets-list__item--four-revert"><span class="number-tickets-list__circle-revert"></span></li>
+                    </ul>
+                    <p class="number-tickets__title-small">Выберите 8 значений</p>
+                    <table class="number-tickets-table">
+                      <tr class="number-tickets-table__row">
+                        <td class="number-tickets-table__td">1</td>
+                        <td class="number-tickets-table__td">2</td>
+                        <td class="number-tickets-table__td number-tickets-table__td--pink-active">3</td>
+                        <td class="number-tickets-table__td">4</td>
+                        <td class="number-tickets-table__td">5</td>
+                      </tr>
+                      <tr class="number-tickets-table__row">
+                        <td class="number-tickets-table__td">6</td>
+                        <td class="number-tickets-table__td">7</td>
+                        <td class="number-tickets-table__td">8</td>
+                        <td class="number-tickets-table__td number-tickets-table__td--pink-active">9</td>
+                        <td class="number-tickets-table__td">10</td>
+                      </tr>
+                      <tr class="number-tickets-table__row">
+                        <td class="number-tickets-table__td">11</td>
+                        <td class="number-tickets-table__td">12</td>
+                        <td class="number-tickets-table__td">13</td>
+                        <td class="number-tickets-table__td">14</td>
+                        <td class="number-tickets-table__td">15</td>
+                      </tr>
+                      <tr class="number-tickets-table__row">
+                        <td class="number-tickets-table__td">16</td>
+                        <td class="number-tickets-table__td">17</td>
+                        <td class="number-tickets-table__td">18</td>
+                        <td class="number-tickets-table__td">19</td>
+                        <td class="number-tickets-table__td">20</td>
+                      </tr>
+                    </table>
+                    <p class="number-tickets__title-small">Выберите бонусные числа от 1 до 4</p>
+                    <table class="number-tickets-table">
+                      <tr class="number-tickets-table__row">
+                        <td class="number-tickets-table__td">1</td>
+                        <td class="number-tickets-table__td">2</td>
+                        <td class="number-tickets-table__td number-tickets-table__td--orange-active">3</td>
+                        <td class="number-tickets-table__td">4</td>
+                      </tr>
+                    </table>
+                    <p class="number-tickets__desc">Каждое число кратно увеличивает шансы на победу</p>
+                  </div>
+                  <div class="order-tickets order-tickets--desktop">
+                    <div class="order-tickets__item order-tickets__item-desktop order-tickets__border-row"><span class="order-tickets__del">-</span><span class="order-tickets__count">#5</span>
+                      <table class="order-tickets__table">
+                        <tr class="tr">
+                          <td class="td">3</td>
+                          <td class="td">5</td>
+                          <td class="td">7</td>
+                          <td class="td">9</td>
+                        </tr>
+                        <tr class="tr">
+                          <td class="td">12</td>
+                          <td class="td">15</td>
+                          <td class="td">16</td>
+                          <td class="td">19</td>
+                        </tr>
+                        <tr class="tr">
+                          <td class="td disabled">1</td>
+                          <td class="td">2</td>
+                          <td class="td disabled">3</td>
+                          <td class="td disabled">4</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="order-tickets__item order-tickets__item-desktop order-tickets__border-row"><span class="order-tickets__del">-</span><span class="order-tickets__count">#5</span>
+                      <table class="order-tickets__table">
+                        <tr class="tr">
+                          <td class="td">3</td>
+                          <td class="td">5</td>
+                          <td class="td">7</td>
+                          <td class="td">9</td>
+                        </tr>
+                        <tr class="tr">
+                          <td class="td">12</td>
+                          <td class="td">15</td>
+                          <td class="td">16</td>
+                          <td class="td">19</td>
+                        </tr>
+                        <tr class="tr">
+                          <td class="td disabled">1</td>
+                          <td class="td">2</td>
+                          <td class="td disabled">3</td>
+                          <td class="td disabled">4</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="order-tickets__item order-tickets__item-desktop order-tickets__border-row"><span class="order-tickets__del">-</span><span class="order-tickets__count">#5</span>
+                      <table class="order-tickets__table">
+                        <tr class="tr">
+                          <td class="td">3</td>
+                          <td class="td">5</td>
+                          <td class="td">7</td>
+                          <td class="td">9</td>
+                        </tr>
+                        <tr class="tr">
+                          <td class="td">12</td>
+                          <td class="td">15</td>
+                          <td class="td">16</td>
+                          <td class="td">19</td>
+                        </tr>
+                        <tr class="tr">
+                          <td class="td disabled">1</td>
+                          <td class="td">2</td>
+                          <td class="td disabled">3</td>
+                          <td class="td disabled">4</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="order-tickets__item order-tickets__item-desktop order-tickets__border-row"><span class="order-tickets__del">-</span><span class="order-tickets__count">#5</span>
+                      <table class="order-tickets__table">
+                        <tr class="tr">
+                          <td class="td">3</td>
+                          <td class="td">5</td>
+                          <td class="td">7</td>
+                          <td class="td">9</td>
+                        </tr>
+                        <tr class="tr">
+                          <td class="td">12</td>
+                          <td class="td">15</td>
+                          <td class="td">16</td>
+                          <td class="td">19</td>
+                        </tr>
+                        <tr class="tr">
+                          <td class="td disabled">1</td>
+                          <td class="td">2</td>
+                          <td class="td disabled">3</td>
+                          <td class="td disabled">4</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tickets tickets--hide"><img class="tickets__images" src="img/tickets.png">
+                <h3 class="tickets__title">Купить билеты</h3>
+                <p class="tickets__desc">Поясняющий текст. Например - Нажмите “Добавить билеты”, чтобы начать покупку</p>
+              </div>
+              <div class="btn-ticket-desktop">
+                <p class="btn-ticket-desktop__all">Всего: <span>5 </span> билетов на сумму <span>1 500</span> ₽</p>
+                <div class="btn-ticket-wrapp">
+                  <button class="btn-desktop btn-desktop--white"><span>Очистить все</span></button>
+                  <button class="btn-desktop btn-desktop--dark"><span>Оплатить</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="popup js-popup-visible">
+              <div class="popup-overlay"></div>
+              <div class="popup-wrapper popup-wrapper--bottom popup-wrapper--transition">
+                <form class="popup-summary">
+                  <div class="popup-summary__item">
+                    <h2 class="popup-summary__title">Отлично, не хотел бы увеличить шанс на выигрыш джекпота?</h2>
+                    <div class="range-filter">
+                      <div class="range-filter__item">
+                        <div class="range-filter__title"><img src="img/Multiplication.png"><span class="range-filter__text">Множитель</span><span class="range-filter__icon"></span></div>
+                        <div class="range-filter__num">1X</div>
+                      </div>
+                      <input class="range" name="range" type="range" min="0" max="10" value="1">
+                    </div>
+                    <div class="range-filter">
+                      <div class="range-filter__item">
+                        <div class="range-filter__title"><img src="img/Circulation.png"><span class="range-filter__text">Кол-во игр подряд</span><span class="range-filter__icon"></span></div>
+                        <div class="range-filter__num">1X</div>
+                      </div>
+                      <input class="range" name="range" type="range" min="0" max="10" value="10">
+                    </div>
+                  </div>
+                  <div class="popup-summary__item popup-summary__item--pink">
+                    <h3 class="popup-summary__subtitle"><span>5</span> Билетов  – <span>1 500</span> ₽</h3>
+                    <ul class="popup-order-list">
+                      <li class="popup-order-list__item">
+                        <div class="popup-order-list__content"><span class="popup-order-list__pic-wrapp"><img class="popup-order-list__pic" src="img/svg/visa.svg"></span>
+                          <div class="popup-order-list__text">
+                            <p class="popup-order-list__title">Банковская карта</p>
+                            <p class="popup-order-list__desc">Mastercard, Visa, МИР</p>
+                          </div>
+                        </div>
+                        <div class="popup-order-input-wrapp">
+                          <input class="popup-order-input" id="card-1" type="radio" name="card">
+                          <label class="popup-order-label" for="card-1"></label>
+                        </div>
+                      </li>
+                      <li class="popup-order-list__item">
+                        <div class="popup-order-list__content"><span class="popup-order-list__pic-wrapp"><img class="popup-order-list__pic" src="img/svg/pay.svg"></span>
+                          <div class="popup-order-list__text">
+                            <p class="popup-order-list__title">Оплатить кошельком</p>
+                            <p class="popup-order-list__desc">На балансе – <span>2 000</span>₽</p>
+                          </div>
+                        </div>
+                        <div class="popup-order-input-wrapp">
+                          <input class="popup-order-input" id="pay-1" type="radio" name="card">
+                          <label class="popup-order-label" for="pay-1"></label>
+                        </div>
+                      </li>
+                      <li class="popup-order-list__item summary-order-list__item--disabled">
+                        <div class="popup-order-list__content"><span class="popup-order-list__pic-wrapp"><img class="popup-order-list__pic" src="img/svg/bonus-green.svg"></span>
+                          <div class="popup-order-list__text">
+                            <p class="popup-order-list__title">Специальный бонус</p>
+                            <p class="popup-order-list__desc"><span>0<span> Баллов доступно</p>
+                          </div>
+                        </div>
+                        <div class="popup-order-input-wrapp">
+                          <input class="popup-order-input" id="bonus" type="checkbox">
+                          <label class="popup-order-label" for="bonus"></label>
+                        </div>
+                      </li>
+                    </ul>
+                    <button class="modal-btn modal-btn--big modal-btn--white">Оплатить <span>1 500</span> ₽</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="g-side g-side--hide"></div>
+      </div>
+    </div>
+    <div class="modal js-visible">
+      <div class="modal-overlay"></div>
+      <div class="modal-wrapper modal-wrapper--big-height modal-wrapper--transition">
+        <div class="modal-summary-wrapp">
+          <div class="modal-header modal-header--border">
+            <button class="modal-close"><img class="modal-close__icon" src="img/svg/Close.svg"></button>
+            <h2 class="modal-header__title">Оплатить билеты</h2>
+          </div>
+          <div class="modal-body">
+            <div class="modal-ticket-summary">
+              <div class="modal-summary">
+                <div class="modal-summary__head">
+                  <div class="modal-summary__title"><img src="img/Multiplication.png"><span class="modal-summary__text">Множитель</span></div>
+                  <div class="modal-summary-counter"><span class="modal-summary-counter__icon modal-summary-counter__icon--disable">-</span><span class="modal-summary-counter__num">1</span><span class="modal-summary-counter__icon">+</span></div>
+                </div>
+                <div class="extended-bid-content extended-bid-content--text-center">
+                  <p class="extended-bid-content__text extended-bid-content__text--width">Кратно увеличиваем все выигрыши</p>
+                </div>
+              </div>
+              <div class="modal-summary">
+                <div class="modal-summary__head">
+                  <div class="modal-summary__title"><img src="img/Circulation.png"><span class="modal-summary__text">Кол-во игр подряд</span></div>
+                  <div class="modal-summary-counter"><span class="modal-summary-counter__icon modal-summary-counter__icon--disable">-</span><span class="modal-summary-counter__num">1</span><span class="modal-summary-counter__icon">+</span></div>
+                </div>
+                <ul class="modal-summary-list">
+                  <li class="modal-summary-list__item">+1</li>
+                  <li class="modal-summary-list__item">+5</li>
+                  <li class="modal-summary-list__item">+10</li>
+                  <li class="modal-summary-list__item">+25</li>
+                </ul>
+                <div class="extended-bid-content extended-bid-content--text-center">
+                  <p class="extended-bid-content__text extended-bid-content__text--width">Какой-то текст подсказки <br>вторая строка</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer modal-footer--pink">
+            <div class="modal-summary-order">
+              <h3 class="modal-summary-order__title"><span>5</span> Билетов  – <span>1 500</span> ₽</h3>
+              <ul class="summary-order-list">
+                <li class="summary-order-list__item">
+                  <div class="summary-order-list__content"><span class="summary-order-list__pic-wrapp"><img class="summary-order-list__pic" src="img/svg/visa.svg"></span>
+                    <div class="summary-order-list__text">
+                      <p class="summary-order-list__title">Банковская карта</p>
+                      <p class="summary-order-list__desc">Mastercard, Visa, МИР</p>
+                    </div>
+                  </div>
+                  <div class="summary-order-input-wrapp">
+                    <input class="summary-order-input" id="card" type="radio" name="card">
+                    <label class="summary-order-label" for="card"></label>
+                  </div>
+                </li>
+                <li class="summary-order-list__item">
+                  <div class="summary-order-list__content"><span class="summary-order-list__pic-wrapp"><img class="summary-order-list__pic" src="img/svg/pay.svg"></span>
+                    <div class="summary-order-list__text">
+                      <p class="summary-order-list__title">Оплатить кошельком</p>
+                      <p class="summary-order-list__desc">На балансе – <span>2 000</span>₽</p>
+                    </div>
+                  </div>
+                  <div class="summary-order-input-wrapp">
+                    <input class="summary-order-input" id="pay" type="radio" name="card">
+                    <label class="summary-order-label" for="pay"></label>
+                  </div>
+                </li>
+                <li class="summary-order-list__item summary-order-list__item--disabled">
+                  <div class="summary-order-list__content"><span class="summary-order-list__pic-wrapp"><img class="summary-order-list__pic" src="img/svg/bonus-green.svg"></span>
+                    <div class="summary-order-list__text">
+                      <p class="summary-order-list__title">Специальный бонус</p>
+                      <p class="summary-order-list__desc"><span>0<span> Баллов доступно</p>
+                    </div>
+                  </div>
+                  <div class="summary-order-input-wrapp">
+                    <input class="summary-order-input" id="bonus" type="checkbox">
+                    <label class="summary-order-label" for="bonus"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="modal-btn modal-btn--big modal-btn--white">Оплатить <span>1 500</span> ₽</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/common.js"></script>
+  </body>
+</html>
