@@ -112,3 +112,11 @@
     height: 140px;
   }
 }
+@media(max-width: 820px) {
+  .btn-ticket-desktop {
+    flex-wrap: wrap;
+  }
+  .btn-ticket-desktop__all {
+    margin-bottom: 16px;
+  }
+}

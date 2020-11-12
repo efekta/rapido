@@ -6,52 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>auth-modal</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preload" as="fonts" href="css/fonts.css">
   </head>
   <body>
     <div class="g-app" style="background-image: url('img/Background.png')">
       <header class="header">
-        <div class="header-wrapper"><a class="header-wrapper__user" href=""><img src="img/svg/union.svg"></a>
-          <ul class="games-slider">
-            <div class="games-slider__item games-slider__item--pink games-slider__item--active"><img src="img/svg/lotery.svg"></div>
-            <div class="games-slider__item games-slider__item--inner"><img src="img/svg/bingo.svg"></div>
-            <div class="games-slider__item games-slider__item--disabled"><img src="img/svg/duel.svg"></div>
-          </ul><a class="header-wrapper__user" href=""><img src="img/svg/subtract.svg"></a>
+        <div class="g-container">
+          <div class="header-wrapper"><a class="header-wrapper__user" href=""><img src="img/svg/union.svg"></a>
+            <ul class="games-slider">
+              <div class="games-slider__item games-slider__item--pink games-slider__item--active"><img src="img/svg/lotery.svg"></div>
+              <div class="games-slider__item games-slider__item--inner"><img src="img/svg/bingo.svg"></div>
+              <div class="games-slider__item games-slider__item--disabled"><img src="img/svg/duel.svg"></div>
+            </ul><a class="header-wrapper__user" href=""><img src="img/svg/subtract.svg"></a>
+          </div>
         </div>
       </header>
       <header class="header-desktop">
-        <div class="header-wrapper"><a class="header-wrapper__logo" href=""><img src="img/svg/logo-desktop.svg"></a>
-          <div class="header-game-wrapp">
-            <div class="header-game">
-              <div class="header-game-box">
-                <div class="header-game-box__item header-game-box__item--pink header-game-box__item--active"><img src="img/svg/lotery.svg"></div>
-                <div class="header-game-box__item header-game-box__item--inner"><img src="img/svg/bingo.svg"></div>
+        <div class="g-container">
+          <div class="header-wrapper"><a class="header-wrapper__logo" href=""><img src="img/svg/logo-desktop.svg"></a>
+            <div class="header-game-wrapp">
+              <div class="header-game">
+                <div class="header-game-box">
+                  <div class="header-game-box__item header-game-box__item--pink header-game-box__item--active"><img src="img/svg/lotery.svg"></div>
+                  <div class="header-game-box__item header-game-box__item--inner"><img src="img/svg/bingo.svg"></div>
+                </div>
+                <ul class="header-game-box header-game-box--disabled">
+                  <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                  <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                  <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                  <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                  <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                  <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                </ul>
               </div>
-              <ul class="header-game-box header-game-box--disabled">
-                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
-                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
-                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
-                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
-                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
-                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
-              </ul>
-            </div>
-            <div class="header-game">
-              <div class="header-game-box">
-                <div class="header-game-box__ticket"><img src="img/doll.png"></div>
-                <div class="header-game-box__ticket"><img src="img/pod.png"></div>
-                <div class="header-game-box__ticket"><img src="img/cherry.png"></div>
+              <div class="header-game">
+                <div class="header-game-box">
+                  <div class="header-game-box__ticket"><img src="img/doll.png"></div>
+                  <div class="header-game-box__ticket"><img src="img/pod.png"></div>
+                  <div class="header-game-box__ticket"><img src="img/cherry.png"></div>
+                </div>
+                <ul class="header-game-box header-game-box--disabled">
+                  <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                  <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                  <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
+                </ul>
               </div>
-              <ul class="header-game-box header-game-box--disabled">
-                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
-                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
-                <div class="header-game-box__item header-game-box__item--disabled"><img src="img/svg/duel.svg"></div>
-              </ul>
             </div>
-          </div>
-          <div class="header-auth"><a class="header-auth__link" href="">knmisha23</a>
-            <div class="header-auth__count">
-              <div class="header-count"><span class="header-count__icon header-count__icon--rub"></span><span class="header-count__num">18 282</span></div>
-              <div class="header-count"><span class="header-count__icon header-count__icon--order"></span><span class="header-count__num">580</span></div>
+            <div class="header-auth"><a class="header-auth__link" href="">knmisha23</a>
+              <div class="header-auth__count">
+                <div class="header-count"><span class="header-count__icon header-count__icon--rub"></span><span class="header-count__num">18 282</span></div>
+                <div class="header-count"><span class="header-count__icon header-count__icon--order"></span><span class="header-count__num">580</span></div>
+              </div>
             </div>
           </div>
         </div>
