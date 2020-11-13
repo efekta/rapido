@@ -1,6 +1,7 @@
 header.header-desktop
     .g-container
         .header-wrapper
+            include modals/profile
             a(href="").header-wrapper__logo
                 img(src="img/svg/logo-desktop.svg" alt="logo")
             .header-game-wrapp
@@ -8,6 +9,7 @@ header.header-desktop
                     .header-game-box
                         .header-game-box__item.header-game-box__item--pink.header-game-box__item--active
                             img(src="img/svg/lotery.svg" alt="pic")
+                            span.g-games-counter 5
                         .header-game-box__item.header-game-box__item--inner
                             img(src="img/svg/bingo.svg" alt="pic")
                     ul.header-game-box.header-game-box--disabled

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>profile-mob-page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preload" href="img/Background.jpg" as="image">
+    <link rel="preload" href="fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="g-app" style="background-image: url('img/Background.jpg')">
+      <header class="header">
+        <div class="g-container">
+          <div class="header-wrapper"><a class="header-wrapper__user g-active" href=""><img src="img/svg/union-inner.svg" alt="pic"></a>
+            <ul class="games-slider">
+              <li class="games-slider__item games-slider__item--pink"><img src="img/svg/lotery.svg" alt="pic"><span class="games-counter">5</span></li>
+              <li class="games-slider__item games-slider__item--inner"><img src="img/svg/bingo.svg" alt="pic"></li>
+              <li class="games-slider__item games-slider__item--disabled"><img src="img/svg/duel.svg" alt="pic"></li>
+            </ul><a class="header-wrapper__user" href=""><img src="img/svg/subtract.svg" alt="pic"></a>
+          </div>
+        </div>
+      </header>
+      <div class="g-wrapper">
+        <div class="g-side"></div>
+        <div class="g-content">
+          <section class="g-main">
+            <div class="profile-page">
+              <div class="profile-page__box profile-page__box--bg">
+                <div class="profile-page__wrapp">
+                  <h3 class="profile-page__title">knmisha23</h3><a class="profile-page__more" href=""></a>
+                </div>
+                <div class="profile-page__wrapp">
+                  <div class="profile-page__item profile-page__item--price">
+                    <p class="profile-page__num">18 282</p>
+                    <p class="profile-page__text">Кошелек</p>
+                  </div>
+                  <div class="profile-page__item profile-page__item--bonus">
+                    <p class="profile-page__num">580</p>
+                    <p class="profile-page__text">Бонусы</p>
+                  </div>
+                </div>
+              </div>
+              <!--.profile-page__box-->
+              <!--    .profile-page__subtitle Мои игры-->
+              <!--    ul.profile-page__games-->
+              <!--        li.profile-page__game-->
+              <!--            .profile-page__game-wrapp-->
+              <!--                span.profile-page__icon-->
+              <!--                    img.profile-page__icon(src="img/game-1.png" alt="game")-->
+              <!--                    span.profile-page__counter 5-->
+              <!--                p.profile-page__name Рапидо-->
+              <!--            span.profile-page__time 02:33-->
+              <!--        li.profile-page__game-->
+              <!--            .profile-page__game-wrapp-->
+              <!--                span.profile-page__icon-->
+              <!--                    img.profile-page__icon(src="img/game-1.png" alt="game")-->
+              <!--                    span.profile-page__counter 5-->
+              <!--                p.profile-page__name Рапидо-->
+              <!--            span.profile-page__time 02:33-->
+              <!--        li.profile-page__game-->
+              <!--            .profile-page__game-wrapp-->
+              <!--                span.profile-page__icon-->
+              <!--                    img.profile-page__icon(src="img/game-1.png" alt="game")-->
+              <!--                    span.profile-page__counter 5-->
+              <!--                p.profile-page__name Рапидо-->
+              <!--            span.profile-page__time 02:33-->
+              <!--        li.profile-page__game-->
+              <!--            .profile-page__game-wrapp-->
+              <!--                span.profile-page__icon-->
+              <!--                    img.profile-page__icon(src="img/game-1.png" alt="game")-->
+              <!--                    span.profile-page__counter 2-->
+              <!--                p.profile-page__name Рапидо-->
+              <!--            span.profile-page__time 12:33-->
+            </div>
+          </section>
+        </div>
+        <div class="g-side g-side--hide"></div>
+      </div>
+    </div>
+    <div class="modal js-visible">
+      <div class="modal-overlay"></div>
+      <div class="modal-wrapper modal-wrapper--transition">
+        <div class="modal-header modal-header--border">
+          <button class="modal-close"><img class="modal-close__icon" src="img/svg/Close.svg" alt="close"></button>
+          <h2 class="modal-header__title">Добавить билеты</h2>
+        </div>
+        <div class="modal-body">
+          <form class="extended-bid-form">
+            <div class="extended-bid"><span class="extended-bid__desc">Расширенная ставка</span>
+              <div class="extended-calc"><span class="extended-calc__icon">+</span><span class="extended-calc__number">2</span><span class="extended-calc__icon">-</span></div>
+            </div>
+            <div class="extended-bid-content">
+              <div class="extended-bid-content__text">Выберете от 1 до 4х бонусных чисел во второй части экрана</div>
+            </div>
+            <div class="extended-bid"><span class="extended-bid__desc">Количество билетов</span>
+              <div class="extended-bid-content extended-bid-content--inner"><span class="extended-bid-content__count">+1</span><span class="extended-bid-content__count extended-bid-content__count--active">+3</span><span class="extended-bid-content__count">+5</span><span class="extended-bid-content__count">+10</span><span class="extended-bid-content__count">+25</span></div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-btn modal-btn--big modal-btn--black">Добавить <span>6</span> билетов – <span>1 500</span>₽</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/common.js"></script>
+  </body>
+</html>

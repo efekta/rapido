@@ -1,0 +1,20 @@
+include ../includes/mixins.pug
+doctype html
+block vars
+html(lang="ru-RU")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" , content="width=device-width, initial-scale=1")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title #{title}
+        include ../includes/links.pug
+    body
+        .g-app(style="background-image: url('img/Background.jpg')")
+            block header
+            .g-wrapper
+                .g-side
+                .g-content
+                    block content
+                .g-side.g-side--hide
+        include ../includes/modals/profile-mob-modal
+        script(src="js/common.js")
