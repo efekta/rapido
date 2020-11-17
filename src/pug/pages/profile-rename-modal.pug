@@ -1,0 +1,10 @@
+extends ../layout/profile-rename-modal
+block vars
+	- var title = 'by_ticket_empty';
+block header
+	include ../includes/header.pug
+	include ../includes/header-desktop.pug
+block content
+	section.g-main
+		include ../includes/by-ticket
+

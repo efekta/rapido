@@ -1,13 +1,14 @@
 .g-app {
-  height: 100vh;
-  min-height: 600px;
-  //overflow-x: hidden;
+  //height: 100%;
+   height: 100vh;
+   min-height: 600px;
+   overflow-x: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @media(max-width: $container-md) {
-    min-height: 100%;
-    //height: auto;
+    // min-height: 100%;
+    // height: auto;
   }
 }
 .g-container {
@@ -27,6 +28,7 @@
 
 .g-main {
   position: relative;
+  padding: 24px;
 }
 
 .g-content {
@@ -51,7 +53,7 @@
 
 .g-side {
   width: 354px;
-  padding: 32px;
+  padding: 32px 15px;
   @media(max-width: $container-md) {
     display: block;
   }

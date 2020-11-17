@@ -1,0 +1,10 @@
+extends ../layout/unbox-modal-desktop
+block vars
+	- var title = 'unbox-modal-desktop';
+block header
+	include ../includes/header.pug
+	include ../includes/header-desktop.pug
+block content
+	section.g-main
+		include ../includes/by-ticket
+

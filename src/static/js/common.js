@@ -37,4 +37,18 @@ $(document).ready(function(){
     function handleEvent(slider) {
         // Fires when user doesn't slide for 100ms
     }
+
+    // JavaScript for label effects only
+    $(window).load(function(){
+        $(".rename-form__input").val("");
+
+        $(".rename-form__input").focusout(function(){
+            if($(this).val() != ""){
+                $(this).addClass("has-content");
+            }else{
+                $(this).removeClass("has-content");
+            }
+        })
+    });
+
 });

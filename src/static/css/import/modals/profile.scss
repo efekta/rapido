@@ -120,7 +120,7 @@
       left: 0;
       width: 15px;
       height: 16px;
-      background: url("../img/rename.png") no-repeat center;
+      background: url("../img/svg/rename.svg") no-repeat center;
       transform: translateY(-50%);
     }
     &--author:before {
@@ -130,7 +130,17 @@
       left: 0;
       width: 15px;
       height: 16px;
-      background: url("../img/author.png") no-repeat center;
+      background: url("../img/svg/author.svg") no-repeat center;
+      transform: translateY(-50%);
+    }
+    &--arh:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 15px;
+      height: 16px;
+      background: url("../img/svg/arh.svg") no-repeat center;
       transform: translateY(-50%);
     }
   }

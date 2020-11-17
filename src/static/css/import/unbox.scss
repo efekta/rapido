@@ -1,0 +1,55 @@
+.unbox {
+  position: relative;
+  padding: 32px 15px;
+  background: radial-gradient(79.82% 239.01% at 8.19% 91.21%, #752F80 0%, #40236C 100%);
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  //overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: url('../img/unbox-bg.png') no-repeat;
+    width: 145px;
+    height: 193px;
+    z-index: 1;
+    background-size: 100% 100%;
+    transform: translateY(-50%);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/Box.png') no-repeat;
+    width: 100px;
+    height: 130px;
+    z-index: 2;
+    /* background-size: 100% 100%; */
+    transform: translateY(-50%);
+  }
+}
+.unbox-content {
+  width: calc(100% - 120px);
+  margin-left: auto;
+}
+.unbox-content__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.unbox-content__link {
+  font-size: 12px;
+  color: #fff;
+}
+.unbox-content__icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+

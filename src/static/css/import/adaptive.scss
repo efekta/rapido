@@ -7,6 +7,9 @@
   .header {
     display: none;
   }
+  .header-profile {
+    display: none;
+  }
 }
 /*MODAL*/
 @media(min-width: $container-sm) {
@@ -134,3 +137,35 @@
     margin-bottom: 16px;
   }
 }
+@media(max-width: $container-sm) {
+  .modal-wrapper--unbox  {
+    height: 306px;
+    bottom: 30px;
+    width: calc(100% - 32px);
+    left: 16px;
+  }
+  .unbox-modal {
+    justify-content: flex-end;
+  }
+  .unbox {
+    &:before {
+      left: auto;
+      right: 0;
+      background-size: 100%;
+      background-position: right;
+    }
+    &:after {
+      top: 20px;
+      left: auto;
+      right: 33px;
+    }
+  }
+  .unbox-content {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .btn-ticket--white {
+    margin-left: 10px;
+  }
+}
+

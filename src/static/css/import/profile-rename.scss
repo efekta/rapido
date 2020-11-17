@@ -1,0 +1,54 @@
+.rename {
+  height: calc(100vh - 150px);
+  padding: 24px;
+  &-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__box {
+      position: relative;
+      width: 100%;
+      min-height: 56px;
+      padding: 10px 16px;
+      background: #FFFFFF;
+      border: 1px solid #AAB5C1;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+    }
+    &__input {
+      width: 100%;
+      padding: 12px 0;
+      border: none;
+      background: transparent;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    &__label {
+      position: absolute;
+      top: 22px;
+      left: 16px;
+      font-weight: normal;
+      font-size: 12px;
+      color: #4D555D;
+      opacity: 0.5;
+    }
+    &__btn {
+      width: 100%;
+      min-height: 48px;
+      padding: 16px;
+      background: #03090F;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+      border-radius: 16px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.rename-form__input:focus ~ label,
+.has-content.rename-form__input ~ label{
+  top: 10px;
+  transition: 0.3s;
+}

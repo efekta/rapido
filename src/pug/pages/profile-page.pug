@@ -1,0 +1,10 @@
+extends ../layout/profile-page-layout
+block vars
+	- var title = 'by_ticket_empty';
+block header
+	include ../includes/header-desktop.pug
+	include ../includes/header-profile.pug
+block content
+	section.g-main
+		include ../includes/profile-mob-page
+

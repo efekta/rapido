@@ -2,11 +2,11 @@
     .modal-overlay
     .modal-wrapper.modal-wrapper--big-height.modal-wrapper--transition
         .modal-summary-wrapp
-            .modal-header.modal-header--border
+            .modal-header.modal-header--border.modal-header--top
                 button.modal-close
                     img.modal-close__icon(src="img/svg/Close.svg" alt="close")
                 h2.modal-header__title Оплатить билеты
-            .modal-body
+            .modal-body.modal-body--top
                 .modal-ticket-summary
                     .modal-summary
                         .modal-summary__head
@@ -35,38 +35,41 @@
                             li.modal-summary-list__item +25
                         .extended-bid-content.extended-bid-content--text-center
                             p.extended-bid-content__text.extended-bid-content__text--width Какой-то текст подсказки <br>вторая строка
-            .modal-footer.modal-footer--pink
-                .modal-summary-order
-                    h3.modal-summary-order__title <span>5</span> Билетов  – <span>1 500</span> ₽
-                    ul.summary-order-list
-                        li.summary-order-list__item
-                            .summary-order-list__content
-                                span.summary-order-list__pic-wrapp
-                                    img.summary-order-list__pic(src="img/svg/visa.svg" alt="pic")
-                                .summary-order-list__text
-                                    p.summary-order-list__title Банковская карта
-                                    p.summary-order-list__desc Mastercard, Visa, МИР
-                            .summary-order-input-wrapp
-                                input#card.summary-order-input(type="radio" name="card")
-                                label.summary-order-label(for="card")
-                        li.summary-order-list__item
-                            .summary-order-list__content
-                                span.summary-order-list__pic-wrapp
-                                    img.summary-order-list__pic(src="img/svg/pay.svg" alt="pic")
-                                .summary-order-list__text
-                                    p.summary-order-list__title Оплатить кошельком
-                                    p.summary-order-list__desc На балансе – <span>2 000</span>₽
-                            .summary-order-input-wrapp
-                                input#pay.summary-order-input(type="radio" name="card")
-                                label.summary-order-label(for="pay")
-                        li.summary-order-list__item.summary-order-list__item--disabled
-                            .summary-order-list__content
-                                span.summary-order-list__pic-wrapp
-                                    img.summary-order-list__pic(src="img/svg/bonus-green.svg" alt="pic")
-                                .summary-order-list__text
-                                    p.summary-order-list__title Специальный бонус
-                                    p.summary-order-list__desc <span>0</span> Баллов доступно
-                            .summary-order-input-wrapp
-                                input#bonus.summary-order-input(type="checkbox")
-                                label.summary-order-label(for="bonus")
-                button.modal-btn.modal-btn--big.modal-btn--white Оплатить <span>1 500</span> ₽
+                .modal-footer.modal-footer--pink
+                    .modal-summary-order
+                        h3.modal-summary-order__title <span>5</span> Билетов  – <span>1 500</span> ₽
+                        ul.summary-order-list
+                            li.summary-order-list__item
+                                .summary-order-list__content
+                                    span.summary-order-list__pic-wrapp
+                                        img.summary-order-list__pic(src="img/svg/visa.svg" alt="pic")
+                                    .summary-order-list__text
+                                        p.summary-order-list__title Банковская карта
+                                        p.summary-order-list__desc Mastercard, Visa, МИР
+                                .summary-order-input-wrapp
+                                    input#card.summary-order-input(type="radio" name="card")
+                                    label.summary-order-label(for="card")
+                            li.summary-order-list__item
+                                .summary-order-list__content
+                                    span.summary-order-list__pic-wrapp
+                                        img.summary-order-list__pic(src="img/svg/pay.svg" alt="pic")
+                                    .summary-order-list__text
+                                        p.summary-order-list__title Оплатить кошельком
+                                        p.summary-order-list__desc На балансе – <span>2 000</span>₽
+                                .summary-order-input-wrapp
+                                    input#pay.summary-order-input(type="radio" name="card")
+                                    label.summary-order-label(for="pay")
+                            li.summary-order-list__item.summary-order-list__item--inner
+                                p.summary-order-list__sub-desc Необходимо проверить результат игр, для корректности баланса
+                                img.summary-order-list__pic-bg(src="img/svg/box-inner.svg" alt="pic")
+                            li.summary-order-list__item.summary-order-list__item--disabled
+                                .summary-order-list__content
+                                    span.summary-order-list__pic-wrapp
+                                        img.summary-order-list__pic(src="img/svg/bonus-green.svg" alt="pic")
+                                    .summary-order-list__text
+                                        p.summary-order-list__title Специальный бонус
+                                        p.summary-order-list__desc <span>0</span> Баллов доступно
+                                .summary-order-input-wrapp
+                                    input#bonus.summary-order-input(type="checkbox")
+                                    label.summary-order-label(for="bonus")
+                    button.modal-btn.modal-btn--big.modal-btn--white Оплатить <span>1 500</span> ₽

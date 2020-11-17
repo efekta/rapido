@@ -1,0 +1,15 @@
+.modal.js-visible
+    .modal-overlay
+    .modal-wrapper.modal-wrapper--big-height.modal-wrapper--transition.modal-wrapper--gray
+        .modal-header.modal-header--rename
+            button.modal-close.modal-close--inner
+                img.modal-close__icon(src="img/svg/Close.svg" alt="close")
+            h2.modal-header__title Сменить никнейм
+        .modal-body.modal-body--height
+            .rename.rename--height
+                form.rename-form(action="" method="")
+                    .rename-form__box
+                        input#nickname.rename-form__input(type="text")
+                        label.rename-form__label(for="nickname") Никнейм
+                    button.rename-form__btn.btn-ticket--dark(type="submit") Сохранить изменения
+

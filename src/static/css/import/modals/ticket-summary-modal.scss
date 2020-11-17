@@ -188,3 +188,36 @@
 .summary-order-list__item--disabled {
   opacity: .4;
 }
+
+.summary-order-list__item--inner {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  //border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 46px;
+  padding: 11px 20px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    border-radius: 2px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(255, 255, 255, 0.2);
+  }
+}
+.summary-order-list__sub-desc {
+  width: 75%;
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+}
+.summary-order-list__pic-bg {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  margin-top: -10px;
+}
